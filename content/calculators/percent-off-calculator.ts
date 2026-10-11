@@ -24,8 +24,21 @@ const tool: ToolInput = {
     { q: 'Is sales tax charged before or after the discount?', a: 'For store discounts and sales, US sales tax is generally charged on the discounted price, which is what this calculator does. Rules for manufacturer coupons vary by state.' },
     { q: 'How do I find the original price from a sale price?', a: 'Divide the sale price by (1 − discount). If something costs $36 after 40% off, the original price was $36 ÷ 0.60 = $60.' },
   ],
-  sources: [],
-  pendingVerification: ['Add 2 references: a source on US sales-tax treatment of store discounts vs manufacturer coupons, and a percentage-arithmetic reference, with accessed dates'],
+  sources: [
+    {
+      title: "Coupons Shouldn't Be Taxed, but Government Vouchers Should",
+      url: 'https://taxfoundation.org/blog/coupons-shouldnt-be-taxed-government-vouchers-should/',
+      publisher: 'Tax Foundation (Josh Barro, updated July 24, 2023)',
+      accessed: '2026-10-11',
+    },
+    {
+      title: 'Grade 6: Ratios and Proportional Relationships (6.RP.A.3.c, percent of a quantity)',
+      url: 'https://www.thecorestandards.org/Math/Content/6/RP/',
+      publisher: 'Common Core State Standards Initiative',
+      accessed: '2026-10-11',
+    },
+  ],
+  pendingVerification: [],
   related: ['/finance/tip-calculator/', '/math/percentage-calculator/', '/finance/3d-printing-cost-calculator/'],
   published: '2026-10-11',
   updated: '2026-10-11',

@@ -21,7 +21,7 @@ const spec: CalculatorSpec = {
     { key: 'spoolPrice', label: 'Spool price ($)', type: 'number', group: 'Material', min: 0, max: 10_000, step: 0.01, default: DEFAULTS.spoolPrice },
     { key: 'spoolGrams', label: 'Spool weight (g)', type: 'number', group: 'Material', min: 1, max: 100_000, step: 1, default: DEFAULTS.spoolGrams },
     { key: 'hours', label: 'Print time (hours)', type: 'number', group: 'Machine & power', min: 0, max: 10_000, step: 0.1, default: DEFAULTS.hours },
-    { key: 'watts', label: 'Average power draw (W)', type: 'number', group: 'Machine & power', min: 0, max: 5_000, step: 1, default: DEFAULTS.watts, hint: 'Check your printer specs or use a plug-in power meter.' },
+    { key: 'watts', label: 'Average power draw (W)', type: 'number', group: 'Machine & power', min: 0, max: 5_000, step: 1, default: DEFAULTS.watts, hint: 'Prusa measured about 80 W printing PLA and 120 W printing ABS. A plug-in power meter gives your own figure.' },
     { key: 'state', label: 'Your state (electricity price)', type: 'select', group: 'Machine & power', options: STATE_OPTIONS, default: 'US average' },
     { key: 'centsPerKwh', label: 'Electricity (¢/kWh)', type: 'number', group: 'Machine & power', min: 0, max: 500, step: 0.01, default: DEFAULTS.centsPerKwh },
     { key: 'printerPrice', label: 'Printer price ($)', type: 'number', group: 'Machine & power', min: 0, max: 1_000_000, step: 1, default: DEFAULTS.printerPrice },

@@ -24,8 +24,21 @@ const tool: ToolInput = {
     { q: 'Why do I keep getting the same number?', a: 'Repeats are normal in random draws. With 5 picks from 1 to 20 there is about a 42% chance of at least one repeat, which surprises most people. The table on this page shows the odds for common ranges.' },
     { q: 'Can I use it to pick a winner?', a: 'Yes: number your entries, set the range to match, and generate one number (or several unique numbers for several winners). For transparency, share your screen or record the draw.' },
   ],
-  sources: [],
-  pendingVerification: ['Add 2 references: the Web Crypto getRandomValues specification and a source on rejection sampling / modulo bias, with accessed dates'],
+  sources: [
+    {
+      title: 'Web Cryptography Level 2: the getRandomValues() method',
+      url: 'https://www.w3.org/TR/WebCryptoAPI/',
+      publisher: 'W3C (World Wide Web Consortium)',
+      accessed: '2026-10-11',
+    },
+    {
+      title: 'Fast Random Integer Generation in an Interval',
+      url: 'https://doi.org/10.1145/3230636',
+      publisher: 'Daniel Lemire, ACM Transactions on Modeling and Computer Simulation 29(1), 2019',
+      accessed: '2026-10-11',
+    },
+  ],
+  pendingVerification: [],
   related: ['/statistics/probability-calculator/', '/statistics/statistics-calculator/', '/math/percentage-calculator/'],
   published: '2026-10-11',
   updated: '2026-10-11',

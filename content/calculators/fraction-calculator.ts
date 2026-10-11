@@ -26,8 +26,21 @@ const tool: ToolInput = {
     { q: 'How do I enter a mixed number?', a: 'Type the whole number, a space, then the fraction, like 2 1/3. You can also type improper fractions (7/3), whole numbers (5), negative values (-3/4) and short decimals (0.25), which are converted to fractions exactly.' },
     { q: 'How do you convert a fraction to a decimal?', a: 'Divide the numerator by the denominator. For example, 2/3 = 2 ÷ 3 = 0.666667 (rounded). The calculator shows the decimal and the percentage for every answer.' },
   ],
-  sources: [],
-  pendingVerification: ['Add 2 authoritative references for fraction arithmetic and mixed numbers (e.g. a textbook or national curriculum page) with accessed dates'],
+  sources: [
+    {
+      title: 'Grade 5: Number and Operations, Fractions (5.NF)',
+      url: 'https://www.thecorestandards.org/Math/Content/5/NF/',
+      publisher: 'Common Core State Standards Initiative',
+      accessed: '2026-10-11',
+    },
+    {
+      title: 'Grade 6: The Number System (6.NS.A.1, dividing fractions by fractions)',
+      url: 'https://www.thecorestandards.org/Math/Content/6/NS/',
+      publisher: 'Common Core State Standards Initiative',
+      accessed: '2026-10-11',
+    },
+  ],
+  pendingVerification: [],
   related: ['/math/lcm-calculator/', '/math/percentage-calculator/', '/statistics/mean-median-mode-calculator/'],
   published: '2026-10-11',
   updated: '2026-10-11',

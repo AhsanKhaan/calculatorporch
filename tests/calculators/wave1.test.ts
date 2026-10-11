@@ -130,8 +130,8 @@ describe('square footage and gravel', () => {
 });
 
 describe('dog pregnancy', () => {
-  test('mating + 63 days, window 58–68 (published example)', () => {
-    expect(dueDates('2026-03-01', 'mating')).toEqual({ due: '2026-05-03', early: '2026-04-28', late: '2026-05-08' });
+  test('mating + 63 days, window 56–68 (published example; Concannon 2000)', () => {
+    expect(dueDates('2026-03-01', 'mating')).toEqual({ due: '2026-05-03', early: '2026-04-26', late: '2026-05-08' });
   });
   test('two matings: window runs to the last mating + 68', () => {
     expect(dueDates('2026-03-01', 'mating', '2026-03-03').late).toBe('2026-05-10');

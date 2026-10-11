@@ -54,21 +54,22 @@ Each brief gives the calculator's **inputs, defaults, formulas, outputs**, its *
   - optional advanced mode with an **ovulation date** or **LH-surge date** (from progesterone testing).
 - **Defaults:** today − 21 days.
 
-**Formulas [U, verify against a veterinary reproduction reference, e.g. the Merck Veterinary Manual]:**
-- From mating: due ≈ mating + **63 days**, with a normal window of about **58–68 days**. With two matings, the window runs from the first mating + 58 to the last mating + 68.
-- From ovulation: about 63 days (narrow ±1–2).
-- From LH surge: about 65 days (±1).
+**Formulas (verified 2026-10-11; sources in `content/calculators/dog-pregnancy-calculator.ts`):**
+- From mating: due ≈ mating + **63 days**, normal window **56–68 days** after a single mating [M: Concannon 2000, IVIS]. With two matings, the window runs from the first mating + 56 to the last mating + 68. The MSD/Merck Veterinary Manual gives a wider 58–72 days from the first accepted breeding [M]; this is shown as a note on the page.
+- From ovulation: 63 days, window 62–64 [M: Concannon 2000].
+- From LH surge: 65 days, window 64–66 [M: MSD Veterinary Manual, Jun 2025; Concannon 2000].
+- Overall: "about 62 to 64 days" [M: MSD Veterinary Manual, dog owners version].
 
 **Outputs:**
 - due date;
 - whelping window;
 - countdown;
 - **week-by-week timeline (weeks 1–9)** with milestones:
-  - implantation, about days 18–22 [U];
-  - earliest ultrasound confirmation, about day 25+ [U];
-  - X-ray puppy count, about day 45+ [U];
-  - start daily temperature checks about day 58;
-  - temperature drop (below about 99°F / 37.2°C) usually 12–24 h before labor [U];
+  - implantation, about days 20–21 from mating (day 22–23 after the LH surge) [M: Concannon 2000];
+  - ultrasound confirms pregnancy reliably by days 25–35 [M: MSD Veterinary Manual];
+  - X-ray shows the puppies from about day 45, best for counting after day 55 [M: MSD Veterinary Manual];
+  - start temperature checks twice a day about day 58;
+  - temperature drop (mean 98.8°F / 37.1°C, range 98.1–100°F) usually 8–24 h before whelping [M: MSD Veterinary Manual];
 - downloadable .ics calendar of key dates (client-side).
 
 - **Original data table:** a day-by-day milestone table, plus "due date from mating date" examples.

@@ -2,21 +2,21 @@ import type { CalculatorSpec } from '@/lib/engine/spec';
 import { addDaysIso, daysBetweenIso, longDate } from './dates';
 
 /**
- * Canine gestation, per docs/03 §2. [U] Verify every number against a veterinary reproduction reference
- * (e.g. the Merck Veterinary Manual) and cite it before publishing (content `pendingVerification`).
+ * Canine gestation (docs/03 §2), verified 2026-10-11: LH surge 64–66 days and 8–24 h temperature drop (MSD Veterinary
+ * Manual), ovulation 62–64 and a single mating 56–68 days, implantation day 22–23 after the LH surge (Concannon 2000, IVIS).
  */
 export const METHODS = {
-  mating: { label: 'Mating (breeding) date', due: 63, early: 58, late: 68 },
-  ovulation: { label: 'Ovulation date (from progesterone testing)', due: 63, early: 61, late: 65 },
+  mating: { label: 'Mating (breeding) date', due: 63, early: 56, late: 68 },
+  ovulation: { label: 'Ovulation date (from progesterone testing)', due: 63, early: 62, late: 64 },
   lh: { label: 'LH surge date (from progesterone testing)', due: 65, early: 64, late: 66 },
 } as const;
 export type Method = keyof typeof METHODS;
 
-/** Milestones in days from mating [U]. */
+/** Milestones in days from mating (taken as the ovulation date, i.e. LH surge + 2), from the sources above. */
 export const MILESTONES = [
-  { day: 18, label: 'Implantation begins (about days 18–22)' },
-  { day: 25, label: 'Earliest ultrasound confirmation (about day 25 onward)' },
-  { day: 45, label: 'X-ray can count puppies (about day 45 onward)' },
+  { day: 20, label: 'Implantation (about days 20–21)' },
+  { day: 25, label: 'Ultrasound can confirm pregnancy (reliably by days 25–35)' },
+  { day: 45, label: 'X-ray shows the puppies (from about day 45; best for counting after day 55)' },
   { day: 58, label: 'Start taking her temperature twice a day' },
 ] as const;
 

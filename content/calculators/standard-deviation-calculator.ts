@@ -25,8 +25,21 @@ const tool: ToolInput = {
     { q: 'Can standard deviation be zero?', a: 'Yes, when every value is the same, because nothing differs from the mean. Standard deviation can never be negative.' },
     { q: 'How many numbers can I enter?', a: 'Up to 5,000 values, separated by commas, spaces, semicolons or new lines. Each value can be negative or a decimal.' },
   ],
-  sources: [],
-  pendingVerification: ['Add 2 references for sample vs population standard deviation (e.g. the NIST/SEMATECH e-Handbook of Statistical Methods and a statistics textbook) with accessed dates'],
+  sources: [
+    {
+      title: 'NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6 Measures of Scale',
+      url: 'https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm',
+      publisher: 'National Institute of Standards and Technology (NIST)',
+      accessed: '2026-10-11',
+    },
+    {
+      title: 'Introductory Statistics 2e, 2.7 Measures of the Spread of the Data',
+      url: 'https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data',
+      publisher: 'OpenStax, Rice University (Barbara Illowsky and Susan Dean)',
+      accessed: '2026-10-11',
+    },
+  ],
+  pendingVerification: [],
   related: ['/statistics/mean-median-mode-calculator/', '/statistics/z-score-calculator/', '/statistics/statistics-calculator/'],
   published: '2026-10-11',
   updated: '2026-10-11',

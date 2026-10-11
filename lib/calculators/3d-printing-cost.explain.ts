@@ -31,7 +31,7 @@ export default function explain(): Explain {
     ],
     assumptions: [
       `Filament length assumes 1.75 mm filament and typical densities (${Object.entries(DENSITY).map(([m, d]) => `${m} ${d}`).join(', ')} g/cm³). Brands vary slightly.`,
-      'Power draw varies with bed temperature, enclosure and material. A plug-in power meter gives your real number.',
+      'The 120 W default errs high on purpose: Prusa measured an average of 80 W printing generic PLA and 120 W printing generic ABS on its MK-series printers (at 26 °C room temperature). Power draw varies with bed temperature, enclosure and material, so a plug-in power meter gives your real number.',
       "Marketplace fee presets are approximations for US sellers and change over time. Check the platform's official fee page; offsite ads, shipping labels and taxes aren't included.",
     ],
   };

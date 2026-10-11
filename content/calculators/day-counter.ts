@@ -24,8 +24,21 @@ const tool: ToolInput = {
     { q: 'Are leap years counted?', a: 'Yes. The calculator follows the Gregorian calendar, where a year is a leap year if it divides by 4, except century years, which must divide by 400. So 2028 is a leap year and 2100 is not.' },
     { q: 'What if the end date is before the start date?', a: 'You get a negative number of days, which tells you how far back the end date is. Swap the dates if you want a positive count.' },
   ],
-  sources: [],
-  pendingVerification: ['Add 2 references for Gregorian calendar and leap-year rules (e.g. a national time and frequency or standards body page) with accessed dates'],
+  sources: [
+    {
+      title: 'Leap Year',
+      url: 'https://www.hko.gov.hk/en/gts/time/basicterms-leapyear.htm',
+      publisher: 'Hong Kong Observatory',
+      accessed: '2026-10-11',
+    },
+    {
+      title: 'Which years are leap years and can you have leap seconds?',
+      url: 'https://www.rmg.co.uk/stories/time/which-years-are-leap-years-can-you-have-leap-seconds',
+      publisher: 'Royal Museums Greenwich',
+      accessed: '2026-10-11',
+    },
+  ],
+  pendingVerification: [],
   related: ['/everyday-life/time-duration-calculator/', '/everyday-life/age-calculator/', '/everyday-life/hours-calculator/'],
   published: '2026-10-11',
   updated: '2026-10-11',
