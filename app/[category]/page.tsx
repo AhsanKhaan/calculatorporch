@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import Icon, { categoryIcon } from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import ToolList from '@/components/ToolList';
-import { categoryMeta, categoryPath, publishedCategories, publishedInstances } from '@/content/registry';
+import { categoryIntro, categoryMeta, categoryPath, publishedCategories, publishedInstances } from '@/content/registry';
 import { categoryBySlug } from '@/content/taxonomy';
 import { crumbsForCategory, popularIn, toolsBySubcategory } from '@/lib/links';
 import { anchorId } from '@/lib/format';
@@ -43,7 +43,7 @@ export default async function CategoryPage({ params }: Props) {
         </span>
         <h1>{c.name} Calculators</h1>
       </div>
-      <p className="lede">{c.intro}</p>
+      <p className="lede">{categoryIntro(c)}</p>
 
       {popular.length > 3 ? (
         <section aria-labelledby="popular-heading" className="card page-section">

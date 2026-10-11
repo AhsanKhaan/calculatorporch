@@ -15,8 +15,14 @@ export interface Category {
   title: string;
   /** ≤ 155 characters */
   description: string;
-  /** About 90 words, shown at the top of the category page (Omni pattern). */
+  /** About 90 words, shown at the top of the category page (Omni pattern). Describes the whole planned category. */
   intro: string;
+  /**
+   * Intro describing only the calculators that are live today. Shown instead of `intro` until every planned
+   * calculator in the category is published (registry.ts categoryIntro), so the page never promises missing tools.
+   * Update it whenever a calculator is added to the category.
+   */
+  introLive?: string;
   /** Display order of subcategory headings. Tools name their subcategory from this list. */
   subcategories: readonly string[];
 }
@@ -29,6 +35,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free math calculators with step-by-step working: fractions, percentages, LCM, volume and right triangles. Every formula shown.',
     intro:
       'Math calculators that show their working, not just an answer. Add, subtract, multiply and divide fractions and mixed numbers step by step, work out percentages of two numbers, find the least common multiple, and solve right triangles and the volume of common shapes. Each calculator explains the formula it uses, walks through a worked example you can check by hand, and lists the questions people ask most. Nothing you type leaves your browser, and every result updates as you type, so you can explore numbers freely.',
+    introLive:
+      "Math calculators that show their working, not just an answer. The fraction calculator adds, subtracts, multiplies and divides fractions and mixed numbers, then gives the result in simplest form, as a mixed number and as a decimal, with every step written out. Worked answers below cover common problems such as 3 1/3 divided by 4 and 2/3 times 2/3. Each page explains the method so you can check it by hand, and nothing you type leaves your browser.",
     subcategories: ['Fractions & arithmetic', 'Percentages', 'Geometry', 'Number theory'],
   },
   {
@@ -38,6 +46,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free statistics calculators: mean, median, mode, standard deviation, z-scores, probability and random numbers, with formulas and steps.',
     intro:
       'Statistics calculators for homework, reports and quick checks. Paste a list of numbers to get the mean, median, mode, range and standard deviation with every step shown, convert a value to a z-score, work out the probability of combined events, or generate random numbers in any range. Each tool states the formula it uses, including whether it treats your data as a sample or a whole population, so you know exactly which answer your teacher or report expects.',
+    introLive:
+      "Statistics calculators for homework, reports and quick checks. The standard deviation calculator finds the mean, variance and standard deviation of a list of numbers, treating it as a sample or a whole population, with every step shown. The random number generator picks one or many whole numbers in any range, with or without repeats, using your browser's cryptographic randomness so each number is equally likely. Both explain the formula behind the result, so you know which answer your teacher or report expects.",
     subcategories: ['Descriptive statistics', 'Probability & distributions', 'Random generators'],
   },
   {
@@ -47,6 +57,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free everyday calculators: time between times, days between dates, age, hours from now, electricity cost, crafts and event planning.',
     intro:
       'Calculators for everyday questions: how long between two times, how many days until a date, exactly how old someone is, and what time it will be a number of hours from now. You will also find tools for running costs at home, using official electricity prices by US state, and for craft projects like candle making and sewing, plus a seating chart maker for weddings and events. Each one shows how the answer is worked out, so you can trust it and explain it.',
+    introLive:
+      "Calculators for everyday date questions. The day counter works out how many days fall between two dates, with or without the end date, and splits the total into weeks, weekdays and weekend days, handling leap years automatically. It also answers quick questions such as what the date will be 10 days from today. Each result shows how it was worked out, so you can trust it and explain it, and nothing you type leaves your browser.",
     subcategories: ['Time & date', 'Home & energy', 'Crafts & sewing', 'Events'],
   },
   {
@@ -56,6 +68,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free construction and DIY calculators: square footage, gravel, concrete slab cost, board feet, roofing, tile, rafters and stair stringers.',
     intro:
       'Construction and DIY calculators that help you order the right amount of material and cut it right the first time. Measure square footage, estimate gravel in cubic yards and tons, price a concrete slab, count board feet, size roofing, tile, rafters and stair stringers, and work out pool salt. Each tool lists its assumptions, such as material densities and waste allowances, cites where they come from, and shows a worked example, so you can sanity-check the result before you buy or build.',
+    introLive:
+      "Construction and DIY calculators that help you order the right amount of material. The square footage calculator measures rectangles, circles and triangles, converts the area to square yards, square meters and acres, and can estimate cost from a price per square foot. The gravel calculator turns length, width and depth into cubic yards, tons and bags for your gravel type, with an allowance for compaction. Each tool lists its assumptions and shows a worked example, so you can sanity-check the result before you buy.",
     subcategories: ['Area & volume', 'Materials', 'Lumber & framing', 'Flooring & roofing', 'Pools'],
   },
   {
@@ -65,6 +79,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free finance calculators for everyday money maths: percent off and sale prices, tips and splitting a bill, and pricing for makers.',
     intro:
       'Everyday money calculators that do the arithmetic without the guesswork. Work out a sale price and how much you save at any percent off, calculate a tip and split the bill, and price products you make, such as 3D prints, so every sale covers materials, machine time, your labor and marketplace fees. These tools do maths, not financial advice: each one shows its formula and a worked example so you can check the numbers yourself.',
+    introLive:
+      "Everyday money calculators that do the arithmetic for you. Work out a sale price and how much you save at any percent off, with optional sales tax; calculate a tip, split the bill and round each share up; and price 3D prints so each sale covers filament, electricity, machine wear, failed prints, your time and marketplace fees. These tools do maths, not financial advice: each one shows its formula and a worked example so you can check the numbers yourself.",
     subcategories: ['Shopping & discounts', 'Pricing & business'],
   },
   {
@@ -83,6 +99,8 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Free pet calculators: dog pregnancy due date and timeline, and puppy adult weight estimates, from cited veterinary references.',
     intro:
       "Pet calculators for dog owners and breeders. Work out a dog's due date and pregnancy timeline from the mating date, and estimate how big a puppy will get as an adult. Each calculator explains the method it uses and the veterinary references behind it, gives week-by-week milestones, and is clear about its limits: results are estimates to help you plan, not veterinary advice, so always involve your vet in a pregnancy or a growth concern.",
+    introLive:
+      "Pet calculators for dog owners and breeders. The dog pregnancy calculator estimates a due date and whelping window from the mating date, or more precisely from an ovulation or LH-surge date if your vet has tested progesterone, and lays out a week-by-week pregnancy calendar with key milestones. Its gestation figures come from veterinary references, which are cited on the page. It is an educational estimate, not veterinary advice, so involve your vet in prenatal care.",
     subcategories: ['Dogs'],
   },
   {

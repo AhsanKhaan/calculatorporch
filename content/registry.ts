@@ -99,10 +99,18 @@ export const AUTHOR = { slug: 'ahsan-khan', path: '/authors/ahsan-khan/' } as co
  * it's used only once every planned calculator in that category is published. Until then both are generated from
  * the published tools, which keeps them accurate as the site grows.
  */
-export function categoryMeta(c: Category): { title: string; description: string } {
+/** True once every planned (green, non-skipped) calculator in the category is published. */
+export function categoryComplete(c: Category): boolean {
   const planned = REGISTRY.filter((r) => r.type === 'calculator' && r.category === c.slug && r.status !== 'skip-vendor-serp' && r.adsense === 'green');
+  return planned.every((r) => publishedTools.some((t) => t.url === r.url));
+}
+
+/** The category page's opening paragraph: the full curated intro once complete, otherwise the live-tools intro. */
+export const categoryIntro = (c: Category): string => (categoryComplete(c) ? c.intro : (c.introLive ?? c.intro));
+
+export function categoryMeta(c: Category): { title: string; description: string } {
   const live = publishedTools.filter((t) => t.category.slug === c.slug).sort((a, b) => demand(b) - demand(a));
-  if (planned.every((r) => live.some((t) => t.url === r.url))) return { title: c.title, description: c.description };
+  if (categoryComplete(c)) return { title: c.title, description: c.description };
   const head = c.title.split(':')[0]!.trim(); // "Math Calculators"
   const list = (names: string[]) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`);
   let names = live.map((t) => t.name);
