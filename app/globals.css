@@ -1,0 +1,231 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens (light + dark). System font stack: zero font bytes, no layout shift (docs/04 §1, §8).
+ * Type scale (docs/05 §1a): body 17px / 1.65, prose measure ≤ 70ch, headings on a ~1.25 ratio, fluid between 375 px and desktop.
+ */
+:root {
+  --bg: #fbfaf7;
+  --fg: #1f2328;
+  --muted: #555d6a;
+  --card: #ffffff;
+  --subtle: #f3f1ec;
+  --line: #e4e1da;
+  --accent: #0f766e;
+  --accent-2: #115e59;
+  --on-accent: #ffffff;
+  --warn: #9a3412;
+  --radius: 12px;
+  --measure: 70ch;
+  --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'SF Mono', Consolas, 'Liberation Mono', monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e8e6e1;
+    --muted: #a7adb7;
+    --card: #1c1f24;
+    --subtle: #22262c;
+    --line: #2f343c;
+    --accent: #5eead4;
+    --accent-2: #99f6e4;
+    --on-accent: #0b1f1d;
+    --warn: #fdba74;
+  }
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Links in running text are underlined (colour alone fails WCAG 1.4.1); nav, chips and cards opt out below. */
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  h1, h2, h3 { color: var(--fg); }
+  h1, h2 { text-wrap: balance; }
+  h3 { text-wrap: pretty; }
+  h1 { font-size: clamp(1.75rem, 1.35rem + 1.7vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; margin: 6px 0 10px; font-weight: 750; }
+  h2 { font-size: clamp(1.3rem, 1.18rem + 0.55vw, 1.6rem); line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 12px; font-weight: 700; }
+  h3 { font-size: 1.125rem; line-height: 1.35; margin: 22px 0 6px; font-weight: 650; }
+  p { margin: 0 0 1em; }
+  ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
+  li { margin: 0.35em 0; }
+  li::marker { color: var(--muted); }
+  strong { font-weight: 650; }
+}
+
+/* Layout */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--card); padding: 8px 12px; border-radius: 8px; z-index: 10; }
+.skip:focus { left: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Header: brand + category nav. On phones the nav is one swipeable row instead of three wrapped rows. */
+header.site { border-bottom: 1px solid var(--line); background: var(--card); }
+header.site .wrap { display: flex; gap: 4px 24px; align-items: center; justify-content: space-between; min-height: 60px; flex-wrap: wrap; }
+header.site .brand { font-weight: 750; text-decoration: none; color: var(--fg); font-size: 1.15rem; letter-spacing: -0.01em; padding: 12px 0; }
+header.site nav { display: flex; gap: 4px 18px; flex-wrap: wrap; }
+header.site nav a { text-decoration: none; color: var(--muted); padding: 10px 0; font-size: 0.95rem; white-space: nowrap; }
+header.site nav a:hover { color: var(--accent); }
+@media (max-width: 720px) {
+  header.site .wrap { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 0; min-height: 0; }
+  header.site .brand { padding: 12px 0 2px; }
+  header.site nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px; gap: 18px; min-width: 0; }
+  header.site nav::-webkit-scrollbar { display: none; }
+}
+
+footer.site { border-top: 1px solid var(--line); margin-top: 56px; padding: 28px 0; color: var(--muted); font-size: 0.875rem; background: var(--card); }
+footer.site nav { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 10px; }
+footer.site nav a { color: var(--muted); padding: 8px 0; text-decoration: none; }
+footer.site nav a:hover { color: var(--accent); text-decoration: underline; }
+
+.crumbs { font-size: 0.875rem; color: var(--muted); margin: 18px 0 2px; }
+.crumbs ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; }
+.crumbs li { margin: 0; }
+.crumbs li + li::before { content: '›'; margin: 0 7px; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); text-decoration: underline; }
+
+.lede { color: var(--muted); margin: 0 0 24px; max-width: 65ch; font-size: 1.125rem; line-height: 1.55; }
+.muted { color: var(--muted); }
+.byline { font-size: 0.875rem; color: var(--muted); margin: 0 0 14px; }
+.byline a { color: inherit; }
+
+/* Quick answer: the 40–60 word direct answer AI answers quote (docs/05 §1 item 3). Full contrast, not muted. */
+.answer-box {
+  max-width: var(--measure); margin: 0 0 22px; padding: 14px 18px; background: var(--subtle);
+  border-left: 4px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box .answer-label { margin: 0 0 4px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); }
+.answer-box p:last-child { margin: 0; font-size: 1.0625rem; line-height: 1.6; }
+
+/* Cards and tool layout: result first on mobile (docs/04 §5.6) */
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+.hero { padding-top: 28px; }
+.tool { display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; align-items: start; margin-bottom: 8px; }
+.tool .result { position: sticky; top: 12px; }
+@media (max-width: 860px) {
+  .tool { grid-template-columns: 1fr; }
+  .tool .result { order: -1; position: static; }
+}
+
+fieldset { border: 0; margin: 0 0 14px; padding: 0; min-width: 0; }
+legend { font-weight: 650; margin-bottom: 10px; font-size: 1.0625rem; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
+@media (max-width: 480px) { .grid2 { grid-template-columns: 1fr; } }
+label { display: block; font-size: 0.875rem; font-weight: 550; color: var(--fg); margin-bottom: 4px; }
+input, select {
+  width: 100%; font: inherit; font-size: 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--fg); min-height: 44px; font-variant-numeric: tabular-nums;
+}
+input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+input[aria-invalid='true'] { border-color: var(--warn); }
+.hint { font-size: 0.8125rem; color: var(--muted); margin: 4px 0 0; line-height: 1.45; font-weight: 400; }
+
+.result .result-label { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+.result .price { font-size: clamp(1.9rem, 1.6rem + 1.2vw, 2.4rem); line-height: 1.15; font-weight: 750; color: var(--accent-2); margin: 4px 0 12px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.result table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+.result td { padding: 8px 4px; border-bottom: 1px solid var(--line); text-align: left; }
+.result td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.result tr.total td { font-weight: 700; }
+
+.btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+button {
+  font: inherit; font-size: 0.9375rem; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--accent); background: transparent;
+  color: var(--accent); cursor: pointer; min-height: 44px;
+}
+button.primary { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+.warn { color: var(--warn); font-size: 0.875rem; }
+
+/* Long-form content: one readable column, each H2 block separated by a rule (docs/05 §1a). */
+.content { max-width: var(--measure); margin: 32px 0 0; font-size: 1.0625rem; line-height: 1.65; }
+.content > section { padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--line); }
+.content > section:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.formula {
+  background: var(--subtle); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin: 0 0 1em;
+  font-family: var(--mono); font-size: 0.875rem; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere;
+}
+/* One formula per line; a wrapped line hangs indented so it still reads as one equation on a phone. */
+.formula code { display: block; font: inherit; white-space: pre-wrap; overflow-wrap: anywhere; padding: 2px 0 2px 2ch; text-indent: -2ch; }
+
+/* "On this page": jump links to every H2 (readers skim; Google can show them as "Jump to" links). */
+.toc { max-width: var(--measure); margin: 28px 0 0; padding: 14px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.toc .toc-title { margin: 0 0 6px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.toc ol { margin: 0; padding-left: 1.3em; columns: 2 220px; column-gap: 28px; font-size: 0.9375rem; }
+.toc li { margin: 0 0 0.35em; break-inside: avoid; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Data tables: readable on phones (scroll inside the wrapper, never the page). */
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin: 0 0 8px; background: var(--card); }
+table.data { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.4; }
+table.data th, table.data td { padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.data thead th { background: var(--subtle); font-weight: 650; font-size: 0.875rem; }
+table.data tbody tr:last-child td { border-bottom: 0; }
+table.data .num { text-align: right; font-variant-numeric: tabular-nums; }
+table.data td.num { white-space: nowrap; }
+@media (max-width: 480px) { table.data th, table.data td { padding: 8px 9px; font-size: 0.875rem; } }
+.table-note { font-size: 0.875rem; color: var(--muted); margin: 0 0 1em; }
+
+/* FAQ: every answer visible under its own question heading (passage-level citability, docs/05 §5). */
+.faq-item + .faq-item { border-top: 1px solid var(--line); }
+.faq-item h3 { margin: 16px 0 6px; }
+.faq-item p { margin: 0 0 16px; }
+
+details.steps { border: 0; padding: 8px 0 0; }
+details.steps summary { cursor: pointer; font-weight: 600; min-height: 28px; }
+details.steps ol, ol.steps-list { font-size: 0.9375rem; padding-left: 1.3em; }
+.trust p, .trust ul { font-size: 0.9375rem; }
+
+/* Engine extras */
+.span2 { grid-column: 1 / -1; }
+textarea {
+  width: 100%; font: inherit; font-size: 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--fg); min-height: 88px; resize: vertical;
+}
+textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+textarea[aria-invalid='true'] { border-color: var(--warn); }
+.card.answer { margin: 0 0 8px; max-width: var(--measure); }
+.card.answer .price { font-size: clamp(1.7rem, 1.5rem + 1vw, 2.1rem); line-height: 1.2; font-weight: 750; color: var(--accent-2); margin: 2px 0 10px; font-variant-numeric: tabular-nums; }
+.card.answer .result-label { margin: 0; color: var(--muted); }
+.parent-link { font-weight: 650; }
+
+/* Link lists: scannable chips instead of a run-on line of links. */
+.link-list { list-style: none; padding: 0; margin: 0 0 1em; display: flex; flex-wrap: wrap; gap: 8px; }
+.link-list li { margin: 0; }
+.link-list a {
+  display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card);
+  text-decoration: none; font-size: 0.9375rem; line-height: 1.4;
+}
+.link-list a:hover { border-color: var(--accent); }
+.other-cats { margin-top: 40px; }
+
+/* Tool lists with a one-line description (category pages, home, A–Z). */
+.tool-list { list-style: none; padding: 0; margin: 0 0 1em; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.tool-list li { margin: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.tool-list a { font-weight: 650; text-decoration: none; font-size: 1.0625rem; }
+.tool-list a:hover { text-decoration: underline; }
+.tool-list .muted { display: block; font-size: 0.9375rem; line-height: 1.5; margin-top: 4px; }
+
+/* Home and hub listings */
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin: 0 0 16px; }
+.hub-grid h2, .hub-grid h3 { margin: 0 0 12px; font-size: 1.15rem; }
+.hub-grid h2 a, .hub-grid h3 a { text-decoration: none; }
+.hub-grid .link-list a { font-size: 0.875rem; padding: 4px 10px; }
+.page-section { margin-top: 40px; }
+.page-section > h2 { margin-bottom: 14px; }
+.prose { max-width: var(--measure); font-size: 1.0625rem; line-height: 1.65; }
+.prose h2 { margin-top: 32px; }

@@ -1,0 +1,14 @@
+{
+  "_rules": "SEC-DEP-06. Only high/critical advisories with no fix available. Each entry needs a reason, mitigation and an expiry ≤ 90 days. scripts/audit.mjs fails CI on anything unlisted or expired.",
+  "advisories": [
+    {
+      "id": "GHSA-vfj7-8cjw-p6xm",
+      "package": "braces <=3.0.3 (via micromatch → fast-glob → @next/eslint-plugin-next → eslint-config-next)",
+      "severity": "high",
+      "reason": "No patched braces release exists (advisory published 2026-09-18; latest braces 3.0.3 from 2024-05-21). npm's suggested fix downgrades eslint-config-next to 14, which is wrong.",
+      "mitigation": "Dev-only: used by the lint tool, not in the runtime bundle (`npm ls braces --omit=dev` is empty). Exploitation needs attacker-controlled glob patterns; ours are fixed in the repo config.",
+      "accepted": "2026-10-11",
+      "expires": "2026-12-10"
+    }
+  ]
+}

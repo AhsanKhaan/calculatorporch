@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Print Cost Calculator: Price Your Prints (Free)</title>
+<meta name="description" content="Find the true cost of a 3D print (filament, power by US state, machine wear, failures, labour) and a price that keeps your margin after Etsy or eBay fees.">
+<link rel="canonical" href="https://handmadeprice.com/3d-printing/3d-print-cost-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3D Print Cost Calculator: Price Your Prints">
+<meta property="og:description" content="True cost per print and a fee-aware selling price. Free, private, runs in your browser.">
+<meta property="og:url" content="https://handmadeprice.com/3d-printing/3d-print-cost-calculator/">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","@id":"https://handmadeprice.com/3d-printing/3d-print-cost-calculator/#app","name":"3D Print Cost Calculator","url":"https://handmadeprice.com/3d-printing/3d-print-cost-calculator/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://handmadeprice.com/#org"}},
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://handmadeprice.com/"},
+  {"@type":"ListItem","position":2,"name":"3D Printing","item":"https://handmadeprice.com/3d-printing/"},
+  {"@type":"ListItem","position":3,"name":"3D Print Cost Calculator"}]},
+ {"@type":"Organization","@id":"https://handmadeprice.com/#org","name":"HandmadePrice","url":"https://handmadeprice.com/"}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">HandmadePrice</a>
+  <nav><a href="/3d-printing/">3D Printing</a><a href="/methodology/">Methodology</a><a href="/about/">About</a></nav>
+</div></header>
+
+<main class="wrap">
+  <p class="crumbs"><a href="/">Home</a> › <a href="/3d-printing/">3D Printing</a> › 3D Print Cost Calculator</p>
+  <h1>3D Print Cost Calculator</h1>
+  <p class="lede"><strong>A 120&nbsp;g PLA print that runs 6 hours costs about $10.85 to make once you count failures and 20 minutes of your time. To keep a 40% margin after Etsy fees, sell it for about $22.37.</strong> Change any input below and the numbers update. Nothing you type leaves your browser.</p>
+
+  <div class="tool">
+    <form class="card" id="calc" autocomplete="off" onsubmit="return false">
+      <fieldset><legend>Material</legend>
+        <div class="grid2">
+          <div><label for="material">Filament type</label>
+            <select id="material"><option>PLA</option><option>PETG</option><option>ABS</option><option>ASA</option><option>TPU</option><option>Nylon</option></select></div>
+          <div><label for="grams">Filament used (g)</label><input id="grams" type="number" inputmode="decimal" min="0" step="any" value="120"><div class="hint" id="lengthHint">≈ 40.2 m of 1.75 mm filament</div></div>
+          <div><label for="spoolPrice">Spool price ($)</label><input id="spoolPrice" type="number" inputmode="decimal" min="0" step="any" value="22"></div>
+          <div><label for="spoolGrams">Spool weight (g)</label><input id="spoolGrams" type="number" inputmode="decimal" min="1" step="any" value="1000"></div>
+        </div>
+      </fieldset>
+      <fieldset><legend>Machine &amp; power</legend>
+        <div class="grid2">
+          <div><label for="hours">Print time (hours)</label><input id="hours" type="number" inputmode="decimal" min="0" step="any" value="6"></div>
+          <div><label for="watts">Average power draw (W)</label><input id="watts" type="number" inputmode="decimal" min="0" step="any" value="120"><div class="hint">Typical while printing PLA; check your printer or a plug meter</div></div>
+          <div><label for="state">Your state (electricity price)</label><select id="state"><option value="18.31">US average: 18.31¢/kWh</option></select></div>
+          <div><label for="centsPerKwh">Electricity (¢/kWh)</label><input id="centsPerKwh" type="number" inputmode="decimal" min="0" step="any" value="18.31"></div>
+          <div><label for="printerPrice">Printer price ($)</label><input id="printerPrice" type="number" inputmode="decimal" min="0" step="any" value="700"></div>
+          <div><label for="lifetimeHours">Expected printer life (hours)</label><input id="lifetimeHours" type="number" inputmode="decimal" min="1" step="any" value="5000"></div>
+          <div><label for="maintPerHour">Maintenance per hour ($)</label><input id="maintPerHour" type="number" inputmode="decimal" min="0" step="any" value="0.05"><div class="hint">Nozzles, belts, build plates</div></div>
+          <div><label for="failRatePct">Failure rate (%)</label><input id="failRatePct" type="number" inputmode="decimal" min="0" max="90" step="any" value="10"></div>
+        </div>
+      </fieldset>
+      <fieldset><legend>Your time &amp; extras</legend>
+        <div class="grid2">
+          <div><label for="laborMinutes">Hands-on time (minutes)</label><input id="laborMinutes" type="number" inputmode="decimal" min="0" step="any" value="20"><div class="hint">Slicing, removal, support cleanup, packing</div></div>
+          <div><label for="laborRate">Your hourly rate ($)</label><input id="laborRate" type="number" inputmode="decimal" min="0" step="any" value="15"></div>
+          <div><label for="extras">Packaging &amp; extras ($)</label><input id="extras" type="number" inputmode="decimal" min="0" step="any" value="1.5"></div>
+        </div>
+      </fieldset>
+      <fieldset><legend>Selling</legend>
+        <div class="grid2">
+          <div><label for="feePreset">Where you sell</label>
+            <select id="feePreset"><option value="none">No marketplace fees</option><option value="etsy" selected>Etsy (US)</option><option value="ebay">eBay (US)</option><option value="custom">Custom fees</option></select>
+            <div class="hint" id="feeHint">6.5% + 3% + $0.25 + $0.20 listing. Verify current fees.</div></div>
+          <div><label for="marginPct">Target profit margin (%)</label><input id="marginPct" type="number" inputmode="decimal" min="0" max="95" step="any" value="40"></div>
+          <div><label for="feePct">Fee % of price</label><input id="feePct" type="number" inputmode="decimal" min="0" step="any" value="9.5"></div>
+          <div><label for="feeFixed">Fixed fee per order ($)</label><input id="feeFixed" type="number" inputmode="decimal" min="0" step="any" value="0.45"></div>
+        </div>
+      </fieldset>
+    </form>
+
+    <aside class="card result" aria-live="polite">
+      <div>Suggested price</div>
+      <div class="price" id="outPrice">$22.37</div>
+      <div class="warn" id="outWarn" hidden>Margin + fee percentage is too high to price. Lower one of them.</div>
+      <table>
+        <tr><td>Filament</td><td id="outMaterial">$2.64</td></tr>
+        <tr><td>Electricity</td><td id="outElectricity">$0.13</td></tr>
+        <tr><td>Machine wear &amp; maintenance</td><td id="outMachine">$1.14</td></tr>
+        <tr><td>Failed-print allowance</td><td id="outFail">$0.43</td></tr>
+        <tr><td>Your time</td><td id="outLabor">$5.00</td></tr>
+        <tr><td>Packaging &amp; extras</td><td id="outExtras">$1.50</td></tr>
+        <tr class="total"><td>Total cost per good print</td><td id="outTotal">$10.85</td></tr>
+        <tr><td>Marketplace fees at this price</td><td id="outFees">$2.58</td></tr>
+        <tr class="total"><td>Profit per sale</td><td id="outProfit">$8.95</td></tr>
+      </table>
+      <div class="btns">
+        <button type="button" class="primary" id="btnCsv">Download CSV</button>
+        <button type="button" id="btnLink">Copy link with these numbers</button>
+      </div>
+      <p class="hint" id="copyMsg" hidden>Link copied.</p>
+    </aside>
+  </div>
+
+  <section class="content">
+    <h2>What the result means</h2>
+    <p><strong>Total cost per good print</strong> is what one sellable print really costs you: filament, power and machine wear, the share of failed prints, your hands-on time, and packaging. <strong>Suggested price</strong> is the lowest price that still leaves your target margin after the marketplace takes its fees. Price below it and you're paying to make sales.</p>
+
+    <h2>How to use it</h2>
+    <ol>
+      <li>Read <strong>filament used</strong> and <strong>print time</strong> from your slicer (Bambu Studio, PrusaSlicer, Cura and others all show both).</li>
+      <li>Pick your state to load its average electricity price, or type your exact rate from your bill.</li>
+      <li>Enter your printer's price and how many hours you expect it to last. Wear is spread across every print hour.</li>
+      <li>Be honest about failures and hands-on time. Those two usually matter more than filament.</li>
+      <li>Choose where you sell, set your margin, then use <strong>Download CSV</strong> to keep a pricing record.</li>
+    </ol>
+
+    <h2>The formula (with a worked example)</h2>
+    <div class="formula">
+      material = grams ÷ spool grams × spool price<br>
+      electricity = watts ÷ 1000 × hours × (¢/kWh ÷ 100)<br>
+      machine = hours × (printer price ÷ lifetime hours + maintenance/hour)<br>
+      failure allowance = (material + electricity + machine) ÷ (1 − failure rate) − (material + electricity + machine)<br>
+      total cost = material + electricity + machine + failure allowance + labour + extras<br>
+      price = (total cost + fixed fees) ÷ (1 − margin − fee %)
+    </div>
+    <p><strong>Worked example (the defaults above):</strong> 120&nbsp;g of PLA from a $22, 1&nbsp;kg spool = <strong>$2.64</strong>. 0.12&nbsp;kW × 6&nbsp;h × $0.1831 = <strong>$0.13</strong> of electricity. 6&nbsp;h × ($700 ÷ 5,000&nbsp;h + $0.05) = <strong>$1.14</strong> of machine wear. A 10% failure rate adds <strong>$0.43</strong>, 20 minutes at $15/h adds <strong>$5.00</strong>, and packaging is <strong>$1.50</strong>. That's a total cost of <strong>$10.85</strong>. With Etsy-style fees (9.5% + $0.45) and a 40% margin, price = ($10.85 + $0.45) ÷ (1 − 0.40 − 0.095) = <strong>$22.37</strong>, which leaves <strong>$8.95</strong> profit (40% of the price).</p>
+
+    <h2>Electricity is the smallest cost: here's the data</h2>
+    <p>Many people worry about power, but a 10-hour print at 120&nbsp;W uses 1.2&nbsp;kWh. At the US average residential price of <strong>18.31¢/kWh</strong>, that's about <strong>$0.22</strong>. Even in the most expensive state it stays under a dollar. Your time and failed prints matter far more.</p>
+    <table class="data">
+      <thead><tr><th>Most expensive states</th><th>¢/kWh</th><th>10-hour print</th></tr></thead>
+      <tbody><tr><td>Hawaii</td><td>48.00¢</td><td>$0.58</td></tr><tr><td>California</td><td>33.61¢</td><td>$0.40</td></tr><tr><td>Maine</td><td>32.41¢</td><td>$0.39</td></tr><tr><td>Massachusetts</td><td>30.49¢</td><td>$0.37</td></tr><tr><td>New York</td><td>29.90¢</td><td>$0.36</td></tr></tbody>
+    </table>
+    <table class="data">
+      <thead><tr><th>Cheapest states</th><th>¢/kWh</th><th>10-hour print</th></tr></thead>
+      <tbody><tr><td>Louisiana</td><td>12.72¢</td><td>$0.15</td></tr><tr><td>Nevada</td><td>12.77¢</td><td>$0.15</td></tr><tr><td>Utah</td><td>13.12¢</td><td>$0.16</td></tr><tr><td>North Dakota</td><td>13.41¢</td><td>$0.16</td></tr><tr><td>Tennessee</td><td>13.71¢</td><td>$0.16</td></tr></tbody>
+    </table>
+    <p class="hint">Source: U.S. Energy Information Administration, <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" rel="nofollow noopener">Electric Power Monthly, Table 5.6.A</a>, residential average price, July 2026 (retrieved 2026-10-04). Assumes 120&nbsp;W average draw. Your printer, heated bed and enclosure may differ.</p>
+
+    <h2>Assumptions and limits</h2>
+    <ul>
+      <li>Filament density and length estimates assume 1.75&nbsp;mm filament and typical densities (PLA 1.24, PETG 1.27, ABS 1.04, ASA 1.07, TPU 1.21, nylon 1.14&nbsp;g/cm³). Brands vary slightly.</li>
+      <li>Power draw varies with bed temperature, enclosure and material. A plug-in power meter gives your real number.</li>
+      <li>Marketplace fee presets are approximations for US sellers and <strong>change over time</strong>. Check the platform's official fee page and use Custom fees if yours differ. Offsite ads, shipping labels and taxes aren't included.</li>
+      <li>This is an estimate to help you price, not financial or tax advice.</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <details><summary>How do you calculate the cost of a 3D print?</summary><p>Add filament (grams used ÷ spool grams × spool price), electricity (kW × hours × rate), machine wear (hours × printer price ÷ lifetime hours), a failed-print allowance, your hands-on time and packaging. The calculator above does it for you and shows each part.</p></details>
+    <details><summary>What is a good price to charge for 3D printing?</summary><p>Start from your full cost per good print, then add a margin that pays for design time, returns and growth. Many sellers aim for 30–50% after fees, but your niche, quality and competition decide what buyers accept. Set the margin field and the calculator works backwards to a price.</p></details>
+    <details><summary>How much should I charge per hour of print time?</summary><p>Print hours mostly cost machine wear and a little electricity: with the defaults, about $0.19 per hour plus $0.02 of power. Your real money is in hands-on minutes and failures, so price those explicitly instead of only charging per print hour.</p></details>
+    <details><summary>Is there a 3D print cost calculator for Excel or Google Sheets?</summary><p>Use <strong>Download CSV</strong> above. It opens in Excel or Google Sheets with every input and result, so you can keep a pricing log for each product.</p></details>
+    <details><summary>How do I calculate the electricity cost of my 3D printer?</summary><p>Multiply average watts by print hours, divide by 1,000 to get kWh, then multiply by your rate. For example, 120&nbsp;W × 10&nbsp;h = 1.2&nbsp;kWh × $0.1831 = about $0.22. Pick your state above to use its official average.</p></details>
+    <details><summary>Can I legally sell 3D prints?</summary><p>It depends on the design. Prints of your own designs are generally yours to sell. Many downloadable models carry licences (for example, non-commercial Creative Commons) that forbid selling, and trademarked or patented items carry extra risk. Check each model's licence. This isn't legal advice.</p></details>
+  </section>
+
+  <section class="content">
+    <h2>About this calculator</h2>
+    <p>Written and maintained by <strong>[Your name]</strong> <!-- TODO(owner): real name only; no personas (playbook §0.2c) -->. See exactly how every number is calculated, and the test cases we check on every update, on the <a href="/methodology/">methodology page</a>. Found an error? <a href="mailto:[your-email]">Tell us</a> <!-- TODO(owner) -->. Last reviewed: 2026-10-04.</p>
+  </section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <a href="/about/">About</a> · <a href="/methodology/">Methodology</a> · <a href="/privacy/">Privacy</a> · <a href="/disclosure/">Disclosure</a>
+  <p>© 2026 HandmadePrice. Estimates only, not financial or tax advice.</p>
+</div></footer>
+
+<script src="/js/calc3d.js"></script>
+<script>
+(function () {
+  "use strict";
+  const C = window.Calc3D, $ = (id) => document.getElementById(id);
+  const ids = ["material","grams","spoolPrice","spoolGrams","hours","watts","centsPerKwh","printerPrice","lifetimeHours","maintPerHour","failRatePct","laborMinutes","laborRate","extras","feePreset","marginPct","feePct","feeFixed"];
+  const money = (v) => (v == null ? "n/a" : "$" + v.toFixed(2));
+
+  // Restore from a shared link (?…). We never rewrite the URL while typing: no history hijacking.
+  const qs = new URLSearchParams(location.search);
+  ids.forEach((id) => { if (qs.has(id)) $(id).value = qs.get(id); });
+
+  function read() {
+    const v = {}; ids.forEach((id) => (v[id] = $(id).value));
+    v.feePct = (+v.feePct || 0) / 100;
+    return v;
+  }
+  function render() {
+    const v = read(), r = C.calculate(v);
+    $("lengthHint").textContent = "≈ " + C.filamentLengthMeters(+v.grams, C.DENSITY[v.material]).toFixed(1) + " m of 1.75 mm filament";
+    $("outMaterial").textContent = money(r.material); $("outElectricity").textContent = money(r.electricity);
+    $("outMachine").textContent = money(r.machine); $("outFail").textContent = money(r.failureAllowance);
+    $("outLabor").textContent = money(r.labor); $("outExtras").textContent = money(r.extras);
+    $("outTotal").textContent = money(r.totalCost); $("outFees").textContent = money(r.fees);
+    $("outProfit").textContent = money(r.profit); $("outPrice").textContent = money(r.price);
+    $("outWarn").hidden = r.valid;
+    return { v, r };
+  }
+  function applyPreset() {
+    const p = C.FEE_PRESETS[$("feePreset").value];
+    if ($("feePreset").value !== "custom") { $("feePct").value = +(p.pct * 100).toFixed(2); $("feeFixed").value = p.fixed; }
+    $("feeHint").textContent = $("feePreset").value === "custom" ? "Enter your platform's fees below." : p.label;
+  }
+  document.getElementById("calc").addEventListener("input", (e) => {
+    if (e.target.id === "feePreset") applyPreset();
+    if (e.target.id === "state") $("centsPerKwh").value = e.target.value;
+    if (["feePct","feeFixed"].includes(e.target.id)) $("feePreset").value = "custom";
+    render();
+  });
+
+  // Load state electricity prices (EIA). The page still works with the US average if this fails.
+  fetch("/data/electricity-us.json").then((r) => r.json()).then((d) => {
+    const sel = $("state");
+    Object.entries(d.rates).filter(([k]) => k !== "US average").sort((a, b) => a[0].localeCompare(b[0]))
+      .forEach(([name, c]) => { const o = document.createElement("option"); o.value = c; o.textContent = name + ": " + c.toFixed(2) + "¢/kWh"; sel.appendChild(o); });
+  }).catch(() => {});
+
+  $("btnCsv").addEventListener("click", () => {
+    const { v, r } = render();
+    const rows = [["Field","Value"], ...ids.map((id) => [id, $(id).value]), ...Object.entries(r).filter(([k]) => k !== "valid")];
+    const csv = rows.map((row) => row.map((x) => '"' + String(x).replace(/"/g, '""') + '"').join(",")).join("\n");
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+    a.download = "3d-print-cost.csv"; a.click(); URL.revokeObjectURL(a.href);
+  });
+  $("btnLink").addEventListener("click", () => {
+    const p = new URLSearchParams(); ids.forEach((id) => p.set(id, $(id).value));
+    const url = location.origin + location.pathname + "?" + p.toString();
+    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => { $("copyMsg").hidden = false; }).catch(() => prompt("Copy this link:", url));
+  });
+
+  applyPreset(); render();
+})();
+</script>
+</body>
+</html>

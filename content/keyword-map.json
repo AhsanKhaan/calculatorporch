@@ -1,0 +1,5235 @@
+[
+ {
+  "url": "/everyday-life/day-counter/10-days-from-today/",
+  "type": "instance",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "10 Days From Today",
+  "primary": "10 days from today",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/everyday-life/day-counter/",
+  "family": "date-offset",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 60500,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 60500,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/2-3-times-2-3/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "2/3 Times 2/3",
+  "primary": "2/3 times 2/3 in fraction form",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 33100,
+   "primaryKd": 23,
+   "primaryCpc": 0,
+   "clusterVolume": 33100,
+   "kdRange": [
+    23,
+    23
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/2-1-3-minus-2-3/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "2 1/3 − 2/3",
+  "primary": "2 1/3 - 2/3 as a fraction",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 8100,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/2-3-in-fraction-form/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "2/3 in Fraction Form",
+  "primary": "2/3 in fraction form",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 29,
+   "primaryCpc": 0,
+   "clusterVolume": 8100,
+   "kdRange": [
+    29,
+    29
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/3-1-3-divided-by-4/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "3 1/3 ÷ 4",
+  "primary": "3 1/3 divided by 4",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 27,
+   "primaryCpc": 0,
+   "clusterVolume": 9900,
+   "kdRange": [
+    27,
+    27
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/2-1-3-times-2/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "2 1/3 × 2",
+  "primary": "2 1/3 x 2",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 27,
+   "primaryCpc": 0,
+   "clusterVolume": 8100,
+   "kdRange": [
+    27,
+    27
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/1-1-2-times-1-4/",
+  "type": "instance",
+  "category": "math",
+  "subcategory": null,
+  "name": "1 1/2 × 1/4",
+  "primary": "1 1 2 times 1 4",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/math/fraction-calculator/",
+  "family": "fraction-expression",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 19,
+   "primaryCpc": 0,
+   "clusterVolume": 1600,
+   "kdRange": [
+    19,
+    19
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/random-number-generator/1-to-16/",
+  "type": "instance",
+  "category": "statistics",
+  "subcategory": null,
+  "name": "Random Number 1 to 16",
+  "primary": "number generator 1 to 16",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/statistics/random-number-generator/",
+  "family": "random-range",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 27100,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 27100,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/percent-off-calculator/40-percent-off-60/",
+  "type": "instance",
+  "category": "finance",
+  "subcategory": null,
+  "name": "40% Off $60",
+  "primary": "60 off 40",
+  "secondary": [
+   "60$ 40 off"
+  ],
+  "faqCandidates": [],
+  "parent": "/finance/percent-off-calculator/",
+  "family": "percent-off",
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 4800,
+   "kdRange": [
+    20,
+    28
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/how-much-does-gravel-cost/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "How much does gravel cost",
+  "primary": "how much does gravel cost",
+  "secondary": [
+   "gravel prices",
+   "how much is a yard of gravel",
+   "how much is a ton of gravel",
+   "how much is a load of gravel",
+   "gravel price",
+   "cheap gravel",
+   "prices for gravel",
+   "price on gravel",
+   "prices of gravel",
+   "cost for a yard of gravel",
+   "cheap gravel for driveway",
+   "price gravel"
+  ],
+  "faqCandidates": [
+   "how much is a yard of gravel",
+   "how much is gravel",
+   "how much does gravel cost",
+   "how much is a ton of gravel",
+   "how much is gravel a ton",
+   "how much is a load of gravel",
+   "how much is gravel per ton",
+   "how much is a truckload of gravel"
+  ],
+  "parent": "/construction/gravel-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 880,
+   "primaryKd": 17,
+   "primaryCpc": 0.57,
+   "clusterVolume": 16410,
+   "kdRange": [
+    0,
+    39
+   ],
+   "keywords": 83,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/how-much-does-a-yard-of-gravel-weigh/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "How much does a yard of gravel weigh",
+  "primary": "how much does a yard of gravel weigh",
+  "secondary": [
+   "pea gravel weight per cubic yard"
+  ],
+  "faqCandidates": [
+   "how much does a yard of gravel weigh",
+   "how much does a bag of pea gravel weigh",
+   "how much does pea gravel weigh"
+  ],
+  "parent": "/construction/gravel-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 3,
+   "primaryCpc": 0,
+   "clusterVolume": 2070,
+   "kdRange": [
+    1,
+    3
+   ],
+   "keywords": 5,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/types-of-gravel/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Types of gravel",
+  "primary": "types of gravel",
+  "secondary": [
+   "what is gravel",
+   "crushed gravel",
+   "gravel sizes",
+   "gravel types",
+   "crushed stone gravel",
+   "different types of gravel",
+   "gravel sizes with pictures",
+   "crushed stone or gravel",
+   "gravel size",
+   "gravel and crushed stone",
+   "crushed gravel driveway"
+  ],
+  "faqCandidates": [
+   "what is gravel",
+   "what is a gravel bike",
+   "what is the gravel",
+   "what is pea gravel",
+   "what does gravel mean",
+   "what is a gravel",
+   "what is gravel bike",
+   "what is a gravel bikes"
+  ],
+  "parent": "/construction/gravel-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 29,
+   "primaryCpc": 0.98,
+   "clusterVolume": 21450,
+   "kdRange": [
+    0,
+    40
+   ],
+   "keywords": 80,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/how-to-build-a-gravel-driveway/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "How to build a gravel driveway",
+  "primary": "how to build a gravel driveway",
+  "secondary": [
+   "how to make a gravel driveway",
+   "how to lay a gravel driveway",
+   "how deep should a gravel driveway be",
+   "clay gravel driveway"
+  ],
+  "faqCandidates": [
+   "how to build a gravel driveway",
+   "how to gravel driveway",
+   "how to make a gravel driveway",
+   "how do you lay a gravel driveway",
+   "how do i lay a gravel driveway",
+   "how to install a gravel driveway",
+   "how to create a gravel driveway",
+   "how to lay a gravel driveway"
+  ],
+  "parent": "/construction/gravel-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 11,
+   "primaryCpc": 0.32,
+   "clusterVolume": 8960,
+   "kdRange": [
+    4,
+    31
+   ],
+   "keywords": 26,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/best-gravel-for-driveway/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Best gravel for driveway",
+  "primary": "best gravel for driveway",
+  "secondary": [
+   "what type of gravel for driveway",
+   "what size gravel for driveway",
+   "best gravel for concrete base",
+   "best gravel for driveway base",
+   "best gravel type for driveway",
+   "best gravel for patio area"
+  ],
+  "faqCandidates": [
+   "what type of gravel for driveway",
+   "what is the best gravel for a driveway",
+   "what size gravel for driveway",
+   "what kind of gravel for driveway",
+   "what is best gravel for driveway",
+   "what is the best gravel for driveways",
+   "what's the best gravel for a driveway",
+   "what is the best gravel to use for a driveway"
+  ],
+  "parent": "/construction/gravel-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 1590,
+   "kdRange": [
+    0,
+    20
+   ],
+   "keywords": 15,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/rafter-span-table/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Rafter span table",
+  "primary": "rafter span table",
+  "secondary": [
+   "rafter span chart",
+   "rafter span",
+   "rafter spans",
+   "2x6 rafter span chart",
+   "rafter span tables",
+   "roof rafter span chart",
+   "roof rafter span table",
+   "taper edge of 2x8 rafter",
+   "2x6 rafter span table",
+   "rafter span guide"
+  ],
+  "faqCandidates": [
+   "how far can a 2x6 rafter span",
+   "how far will a 2x6 rafter span",
+   "how far can i span a 2x6 rafter",
+   "how far can a 2x4 rafter span without support",
+   "how far can a 2x6 rafter span without support",
+   "how far can a 2x10 rafter span without support"
+  ],
+  "parent": "/construction/rafter-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 19,
+   "primaryCpc": 3.79,
+   "clusterVolume": 13750,
+   "kdRange": [
+    2,
+    23
+   ],
+   "keywords": 54,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/roof-pitch-chart/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Roof pitch chart",
+  "primary": "roof pitch chart",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/construction/rafter-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 4,
+   "primaryCpc": 1.02,
+   "clusterVolume": 2900,
+   "kdRange": [
+    4,
+    4
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/truss-vs-rafter/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Truss vs rafter",
+  "primary": "truss vs rafter",
+  "secondary": [
+   "rafter vs truss",
+   "joist vs rafter",
+   "difference between truss and rafter",
+   "rafter vs joist",
+   "rafter truss",
+   "roof rafter vs truss",
+   "truss vs rafter roof",
+   "truss vs rafter vs joist",
+   "difference between a truss and a rafter",
+   "roof joist vs rafter"
+  ],
+  "faqCandidates": [
+   "what is the difference between a truss and a rafter",
+   "what is the difference between a rafter and a truss"
+  ],
+  "parent": "/construction/rafter-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 11,
+   "primaryCpc": 2.62,
+   "clusterVolume": 6980,
+   "kdRange": [
+    0,
+    19
+   ],
+   "keywords": 33,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/rafter-spacing/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Rafter spacing",
+  "primary": "rafter spacing",
+  "secondary": [
+   "rafter spacing chart",
+   "rafter spacing table",
+   "roof rafter spacing",
+   "roof rafter spacing chart",
+   "rafter spacing for metal roof",
+   "rafter spacing for tin roof",
+   "metal roofing rafter spacing",
+   "rafter spacing for metal roofing",
+   "rafter spacing for roof",
+   "typical rafter spacing"
+  ],
+  "faqCandidates": [],
+  "parent": "/construction/rafter-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 16,
+   "primaryCpc": 3.79,
+   "clusterVolume": 4710,
+   "kdRange": [
+    3,
+    22
+   ],
+   "keywords": 24,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/how-to-cut-a-birdsmouth/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Birdsmouth cut rafter",
+  "primary": "birdsmouth cut rafter",
+  "secondary": [
+   "birds mouth rafter",
+   "how to cut a birdsmouth rafter",
+   "how to cut rafters",
+   "birds mouth rafter cut",
+   "rafter birdsmouth cut",
+   "cutting a rafter birdsmouth",
+   "cut birdsmouth rafter",
+   "birdsmouth rafter",
+   "birdsmouth rafter cut",
+   "cutting a birdsmouth on a rafter",
+   "seat cut rafter",
+   "plumb cut rafter"
+  ],
+  "faqCandidates": [
+   "how to cut rafters",
+   "how to cut a birdsmouth rafter",
+   "how to cut a birds mouth in a rafter",
+   "how to cut a rafter birdsmouth",
+   "how to cut a birds mouth on a rafter",
+   "how to cut rafter tails",
+   "how to cut birdsmouth rafter",
+   "how to cut rafter tails for fascia"
+  ],
+  "parent": "/construction/rafter-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 390,
+   "primaryKd": 15,
+   "primaryCpc": 0,
+   "clusterVolume": 5180,
+   "kdRange": [
+    6,
+    31
+   ],
+   "keywords": 32,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/finance/3d-printing-cost-calculator/how-much-does-3d-printing-cost/",
+  "type": "guide",
+  "category": "finance",
+  "subcategory": null,
+  "name": "How much does 3d printing cost",
+  "primary": "how much does 3d printing cost",
+  "secondary": [
+   "cost of printing 3d",
+   "how much does it cost to 3d print",
+   "how much does a 3d print cost",
+   "how much to charge for 3d prints",
+   "3d printing cost",
+   "cost of 3d printing",
+   "3d printer material cost",
+   "average cost of 3d printing",
+   "3d printing service cost",
+   "3d printing cost per gram",
+   "cost of 3d printing service",
+   "3d printing cost comparison"
+  ],
+  "faqCandidates": [
+   "how much does 3d printing cost",
+   "how much does it cost to 3d print",
+   "how much does a 3d print cost",
+   "how much does it cost to 3d print something",
+   "how much is 3d printing cost",
+   "how much does filament cost for a 3d printer",
+   "how much to charge for 3d prints",
+   "how much 3d printing cost"
+  ],
+  "parent": "/finance/3d-printing-cost-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 21,
+   "primaryCpc": 0.25,
+   "clusterVolume": 7560,
+   "kdRange": [
+    7,
+    32
+   ],
+   "keywords": 30,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/board-foot-calculator/nominal-vs-actual-lumber-sizes/",
+  "type": "guide",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Nominal vs actual lumber sizes",
+  "primary": "nominal vs actual lumber sizes",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/construction/board-foot-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 320,
+   "primaryKd": 20,
+   "primaryCpc": 0.07,
+   "clusterVolume": 320,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/3d-printing-cost-calculator/how-much-does-a-3d-printer-cost/",
+  "type": "guide",
+  "category": "finance",
+  "subcategory": null,
+  "name": "How much does a 3d printer cost",
+  "primary": "how much does a 3d printer cost",
+  "secondary": [
+   "3d printer cost",
+   "cost of 3d printer",
+   "average cost of a 3d printer",
+   "cost of a 3d printer",
+   "3d printer costs",
+   "average cost of 3d printer",
+   "average 3d printer cost",
+   "cost of 3d printer material",
+   "industrial 3d printer cost",
+   "commercial 3d printer cost"
+  ],
+  "faqCandidates": [
+   "how much does a 3d printer cost",
+   "how much does a fdm 3d printer cost",
+   "how much is a 3d printer cost",
+   "how much does a 3d printer plastic cost",
+   "how.much does a 3d printer cost",
+   "how much does 3d printer cost",
+   "how much does a good 3d printer cost",
+   "what does a 3d printer cost"
+  ],
+  "parent": "/finance/3d-printing-cost-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 5400,
+   "primaryKd": 24,
+   "primaryCpc": 0.24,
+   "clusterVolume": 17320,
+   "kdRange": [
+    10,
+    43
+   ],
+   "keywords": 40,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/finance/3d-printing-cost-calculator/3d-printer-electricity-cost/",
+  "type": "guide",
+  "category": "finance",
+  "subcategory": null,
+  "name": "3d printer electricity cost",
+  "primary": "3d printer electricity cost",
+  "secondary": [
+   "how much does it cost to run a 3d printer",
+   "3d printer operating costs"
+  ],
+  "faqCandidates": [
+   "how much does it cost to run a 3d printer"
+  ],
+  "parent": "/finance/3d-printing-cost-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 110,
+   "primaryKd": 13,
+   "primaryCpc": 0,
+   "clusterVolume": 220,
+   "kdRange": [
+    9,
+    19
+   ],
+   "keywords": 3,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/candle-wax-calculator/what-is-candle-wax-made-of/",
+  "type": "guide",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "What is candle wax made of",
+  "primary": "what is candle wax made of",
+  "secondary": [
+   "what are candles made of",
+   "what wax are candles made of"
+  ],
+  "faqCandidates": [
+   "what are candles made of",
+   "what is candle wax made of",
+   "what wax are candles made of",
+   "how is candle wax made",
+   "what are candle wax made of",
+   "how is wax candle made"
+  ],
+  "parent": "/everyday-life/candle-wax-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 880,
+   "primaryKd": 14,
+   "primaryCpc": 0.08,
+   "clusterVolume": 2680,
+   "kdRange": [
+    14,
+    37
+   ],
+   "keywords": 6,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/candle-wax-calculator/how-to-dye-candle-wax/",
+  "type": "guide",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "How to dye candle wax",
+  "primary": "how to dye candle wax",
+  "secondary": [
+   "how to color candle wax",
+   "candle wax dye"
+  ],
+  "faqCandidates": [
+   "how to color candle wax",
+   "how do you dye candle wax",
+   "how to dye candle wax"
+  ],
+  "parent": "/everyday-life/candle-wax-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 260,
+   "primaryKd": 10,
+   "primaryCpc": 0.24,
+   "clusterVolume": 1100,
+   "kdRange": [
+    7,
+    31
+   ],
+   "keywords": 4,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/candle-wax-calculator/best-wax-for-candles/",
+  "type": "guide",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Best wax for candles",
+  "primary": "best wax for candles",
+  "secondary": [
+   "what is the best wax for candles",
+   "what wax is best for candles"
+  ],
+  "faqCandidates": [
+   "what is the best wax to make candles",
+   "what is the best wax for candles",
+   "what wax is best for candles",
+   "what is the best wax for candle making"
+  ],
+  "parent": "/everyday-life/candle-wax-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 770,
+   "kdRange": [
+    8,
+    23
+   ],
+   "keywords": 4,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/sports/bowling-score-calculator/how-to-score-bowling/",
+  "type": "guide",
+  "category": "sports",
+  "subcategory": null,
+  "name": "How to score bowling",
+  "primary": "how to score bowling",
+  "secondary": [
+   "how to keep score in bowling",
+   "how to take score in bowling"
+  ],
+  "faqCandidates": [
+   "how to score bowling",
+   "how to keep score in bowling",
+   "how to take score in bowling",
+   "how to score in bowling",
+   "how to keep score of bowling",
+   "how to keep score on bowling",
+   "how to score for bowling",
+   "how to keep score bowling"
+  ],
+  "parent": "/sports/bowling-score-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 34,
+   "primaryCpc": 0.35,
+   "clusterVolume": 5690,
+   "kdRange": [
+    6,
+    36
+   ],
+   "keywords": 21,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/sports/bowling-score-calculator/perfect-game-bowling/",
+  "type": "guide",
+  "category": "sports",
+  "subcategory": null,
+  "name": "Perfect game bowling",
+  "primary": "perfect game bowling",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/sports/bowling-score-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 21,
+   "primaryCpc": 0,
+   "clusterVolume": 2400,
+   "kdRange": [
+    21,
+    21
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/puppy-weight-calculator/dog-breed-weight-chart/",
+  "type": "guide",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Dog breed weight chart",
+  "primary": "dog breed weight chart",
+  "secondary": [
+   "how much should a german shepherd weigh",
+   "how much should a golden retriever weigh",
+   "how much should a yorkie weigh",
+   "puppy weight chart by breed"
+  ],
+  "faqCandidates": [
+   "how much should a german shepherd weigh",
+   "how much do yorkies weigh",
+   "how much should a golden retriever weigh",
+   "how much should a yorkie weigh",
+   "how much does a standard poodle weigh",
+   "how big are great pyrenees dogs",
+   "how much should a pitbull weigh",
+   "how much does a great pyrenees weigh"
+  ],
+  "parent": "/pets/puppy-weight-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 6090,
+   "kdRange": [
+    13,
+    46
+   ],
+   "keywords": 29,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-pregnancy-calculator/how-long-are-dogs-pregnant/",
+  "type": "guide",
+  "category": "pets",
+  "subcategory": null,
+  "name": "How long are dogs pregnant",
+  "primary": "how long are dogs pregnant",
+  "secondary": [
+   "how long pregnancy dogs",
+   "dog pregnancy length",
+   "dog pregnancy week by week",
+   "signs of labor in dogs",
+   "gestation period for a dog's pregnancy",
+   "dog pregnancy how long does it last",
+   "dog pregnancy stages",
+   "stages of dog pregnancy",
+   "dog pregnancy period",
+   "dog pregnancy duration",
+   "dogs pregnancy length"
+  ],
+  "faqCandidates": [
+   "how long are dogs pregnant",
+   "how long pregnancy dogs",
+   "how long a dog pregnancy",
+   "how long is dog pregnancy",
+   "how long is a dogs pregnancy",
+   "how long does pregnancy in dogs last",
+   "what is the length of pregnancy for a dog",
+   "how long is a dog's pregnancy"
+  ],
+  "parent": "/pets/dog-pregnancy-calculator/",
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 33100,
+   "primaryKd": 23,
+   "primaryCpc": 0.03,
+   "clusterVolume": 89200,
+   "kdRange": [
+    10,
+    36
+   ],
+   "keywords": 104,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-pregnancy-calculator/dog-pregnancy-test/",
+  "type": "guide",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Dog pregnancy test",
+  "primary": "dog pregnancy test",
+  "secondary": [
+   "is there a pregnancy test for dogs",
+   "do human pregnancy tests work on dogs",
+   "pregnancy test for dogs",
+   "dog.pregnancy test",
+   "home pregnancy test for dogs",
+   "dog pregnancy test kit",
+   "would a pregnancy test work on a dog",
+   "at home dog pregnancy tests",
+   "dog pregnancy test at home",
+   "dogs pregnancy test",
+   "at home dog pregnancy test",
+   "bellylabs dog pregnancy test"
+  ],
+  "faqCandidates": [
+   "is there a pregnancy test for dogs",
+   "is there a pregnancy test for a dog",
+   "is there dog pregnancy tests",
+   "do pregnancy tests work on dogs",
+   "will a pregnancy test work for a dog",
+   "do human pregnancy test work on dogs",
+   "do human pregnancy tests work on dogs",
+   "will a pregnancy test work on a dog"
+  ],
+  "parent": "/pets/dog-pregnancy-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 24,
+   "primaryCpc": 0.58,
+   "clusterVolume": 21540,
+   "kdRange": [
+    0,
+    28
+   ],
+   "keywords": 81,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-pregnancy-calculator/signs-of-pregnancy-in-dogs/",
+  "type": "guide",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Dog pregnancy signs",
+  "primary": "dog pregnancy signs",
+  "secondary": [
+   "dog signs of pregnancy symptoms",
+   "signs and symptoms of dog pregnancy",
+   "dog pregnancy signs week by week",
+   "pregnancy symptoms for a dog",
+   "signs of pregnancy on dogs",
+   "pregnancy signs in a dog",
+   "pregnancy signs for dogs",
+   "signs of pregnancy in dogs",
+   "signs of early dog pregnancy",
+   "dog pregnancy symptoms"
+  ],
+  "faqCandidates": [
+   "when do dogs start showing pregnancy",
+   "how to tell how big a dog will get",
+   "when does a dog start showing pregnancy",
+   "when does dog pregnancy start showing",
+   "what are signs of pregnancy for a dog",
+   "how can you tell how big a dog will get",
+   "when do dogs show signs of pregnancy",
+   "when do dogs start showing signs of pregnancy"
+  ],
+  "parent": "/pets/dog-pregnancy-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 18,
+   "primaryCpc": 0.06,
+   "clusterVolume": 42100,
+   "kdRange": [
+    4,
+    40
+   ],
+   "keywords": 135,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/food/pizza-dough-calculator/neapolitan-pizza-dough-recipe/",
+  "type": "guide",
+  "category": "food",
+  "subcategory": null,
+  "name": "Neapolitan pizza dough recipe",
+  "primary": "neapolitan pizza dough recipe",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": "/food/pizza-dough-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 33,
+   "primaryCpc": 0.16,
+   "clusterVolume": 6600,
+   "kdRange": [
+    33,
+    33
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/pizza-dough-calculator/new-york-style-pizza-dough-recipe/",
+  "type": "guide",
+  "category": "food",
+  "subcategory": null,
+  "name": "Recipe new york pizza dough",
+  "primary": "recipe new york pizza dough",
+  "secondary": [
+   "recipe for new york style pizza dough"
+  ],
+  "faqCandidates": [],
+  "parent": "/food/pizza-dough-calculator/",
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 260,
+   "primaryKd": 19,
+   "primaryCpc": 0.37,
+   "clusterVolume": 520,
+   "kdRange": [
+    19,
+    22
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/math/fraction-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": "Fractions & arithmetic",
+  "name": "Fraction Calculator",
+  "primary": "fraction calculator",
+  "secondary": [
+   "mixed fraction calculator",
+   "mixed numbers calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 77900,
+   "kdRange": [
+    16,
+    27
+   ],
+   "keywords": 12,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/lcm-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": "Number theory",
+  "name": "LCM Calculator",
+  "primary": "lcm calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 22200,
+   "kdRange": [
+    26,
+    26
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/volume-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": "Geometry",
+  "name": "Volume Calculator",
+  "primary": "volume calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 19700,
+   "kdRange": [
+    17,
+    27
+   ],
+   "keywords": 3,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/right-triangle-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": "Geometry",
+  "name": "Right Triangle Calculator",
+  "primary": "right triangle calculator",
+  "secondary": [
+   "right angle triangle calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 14800,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/percentage-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": "Percentages",
+  "name": "Percentage Calculator",
+  "primary": "percentage calculator",
+  "secondary": [],
+  "faqCandidates": [
+   "how to find the percentage of 2 numbers"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 5400,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/statistics-calculator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Descriptive statistics",
+  "name": "Statistics Calculator",
+  "primary": "statistics calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 74000,
+   "primaryKd": 27,
+   "primaryCpc": 0,
+   "clusterVolume": 74000,
+   "kdRange": [
+    27,
+    27
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/random-number-generator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Random generators",
+  "name": "Random Number Generator",
+  "primary": "random number generator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 0,
+   "kdRange": null,
+   "keywords": 0,
+   "sources": []
+  }
+ },
+ {
+  "url": "/statistics/probability-calculator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Probability & distributions",
+  "name": "Probability Calculator",
+  "primary": "probability calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 28,
+   "primaryCpc": 0,
+   "clusterVolume": 9900,
+   "kdRange": [
+    28,
+    28
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/standard-deviation-calculator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Descriptive statistics",
+  "name": "Standard Deviation Calculator",
+  "primary": "standard deviation calculator",
+  "secondary": [
+   "standard deviation calculation",
+   "find standard deviation calculator",
+   "average and standard deviation calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 9600,
+   "kdRange": [
+    16,
+    27
+   ],
+   "keywords": 3,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/z-score-calculator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Probability & distributions",
+  "name": "Z-Score Calculator",
+  "primary": "z score calculator",
+  "secondary": [
+   "z value calculator",
+   "z score calc"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 7000,
+   "kdRange": [
+    18,
+    28
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/mean-median-mode-calculator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": "Descriptive statistics",
+  "name": "Mean, Median, Mode Calculator",
+  "primary": "mean median mode calculator",
+  "secondary": [],
+  "faqCandidates": [
+   "how to find the range of a data set",
+   "how to find an average"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 8000,
+   "kdRange": [
+    24,
+    28
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/time-duration-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Time & date",
+  "name": "Time Duration Calculator",
+  "primary": "time duration calculator",
+  "secondary": [
+   "time duration calc",
+   "calculator time between two times"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 90500,
+   "primaryKd": 28,
+   "primaryCpc": 0,
+   "clusterVolume": 94000,
+   "kdRange": [
+    24,
+    29
+   ],
+   "keywords": 3,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/day-counter/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Time & date",
+  "name": "Day Counter",
+  "primary": "day counter",
+  "secondary": [],
+  "faqCandidates": [
+   "how many days in april"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 18100,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/age-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Time & date",
+  "name": "Age Calculator",
+  "primary": "age calculator",
+  "secondary": [
+   "geekzilla.io age calculator",
+   "yes calculate"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 17200,
+   "kdRange": [
+    21,
+    24
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/hours-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Time & date",
+  "name": "Hours Calculator",
+  "primary": "hours calculator",
+  "secondary": [
+   "hours from now calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 3600,
+   "kdRange": [
+    21,
+    21
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/seating-chart-maker/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Events",
+  "name": "Seating Chart Maker",
+  "primary": "seating chart maker",
+  "secondary": [
+   "wedding seating chart maker",
+   "classroom seating chart maker"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 26,
+   "primaryCpc": 1.13,
+   "clusterVolume": 8100,
+   "kdRange": [
+    26,
+    26
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/electricity-cost-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Home & energy",
+  "name": "Electricity Cost Calculator",
+  "primary": "electricity cost calculator",
+  "secondary": [
+   "electricity calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 33,
+   "primaryCpc": 2.8,
+   "clusterVolume": 4500,
+   "kdRange": [
+    29,
+    33
+   ],
+   "keywords": 2,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/candle-wax-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Crafts & sewing",
+  "name": "Candle Wax Calculator",
+  "primary": "candle wax calculator",
+  "secondary": [
+   "soy wax calculator",
+   "how much wax for candle",
+   "candle wax per jar",
+   "candle fragrance load",
+   "soy wax vs paraffin",
+   "candle jar sizes",
+   "candlemakers supply"
+  ],
+  "faqCandidates": [
+   "how to make candle wax",
+   "how can i make candle",
+   "how i make candles in home",
+   "how to create candle",
+   "what are low temperature candles normally used for",
+   "what is a candle wick made of",
+   "how do you make a soy candle",
+   "how make soy candles"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 13,
+   "primaryCpc": 1.47,
+   "clusterVolume": 34280,
+   "kdRange": [
+    5,
+    74
+   ],
+   "keywords": 120,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/fabric-yardage-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": "Crafts & sewing",
+  "name": "Fabric Yardage Calculator",
+  "primary": "fabric yardage calculator",
+  "secondary": [
+   "fabric calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 24,
+   "primaryCpc": 2.01,
+   "clusterVolume": 1300,
+   "kdRange": [
+    24,
+    24
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/square-footage-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Area & volume",
+  "name": "Square Footage Calculator",
+  "primary": "square footage calculator",
+  "secondary": [
+   "calculate sq ft",
+   "calc sq ft",
+   "how to calculate square feet"
+  ],
+  "faqCandidates": [
+   "how to calculate square feet",
+   "how to measure square feet",
+   "how to figure square footage",
+   "how to find square feet",
+   "how do you figure the square footage",
+   "how to figure square feet",
+   "how to do sqft",
+   "how to get square feet"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 74000,
+   "primaryKd": 18,
+   "primaryCpc": 0.05,
+   "clusterVolume": 176060,
+   "kdRange": [
+    9,
+    29
+   ],
+   "keywords": 17,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/gravel-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Materials",
+  "name": "Gravel Calculator",
+  "primary": "gravel calculator",
+  "secondary": [
+   "figuring gravel",
+   "how much gravel do i need",
+   "how much pea gravel do i need",
+   "how much gravel do i need for my driveway",
+   "gravel cubic yards",
+   "driveway gravel depth",
+   "calculator for gravel driveway",
+   "gravel estimator for driveway",
+   "pea gravel per cubic yard",
+   "driveway gravel estimator"
+  ],
+  "faqCandidates": [
+   "how much gravel do i need",
+   "how much pea gravel do i need",
+   "how much gravel do i need for my driveway",
+   "how to construct a gravel driveway",
+   "what wet rock gravel is for in concrete",
+   "what type gravel for driveway",
+   "what is p gravel",
+   "how much for a ton of gravel"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 40500,
+   "primaryKd": 22,
+   "primaryCpc": 0.69,
+   "clusterVolume": 237170,
+   "kdRange": [
+    0,
+    55
+   ],
+   "keywords": 856,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/board-foot-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Lumber & framing",
+  "name": "Board Foot Calculator",
+  "primary": "board foot calculator",
+  "secondary": [
+   "board feet calculator",
+   "board feet formula",
+   "board feet to linear feet",
+   "hardwood price per board foot"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 18100,
+   "primaryKd": 26,
+   "primaryCpc": 0.01,
+   "clusterVolume": 33640,
+   "kdRange": [
+    1,
+    26
+   ],
+   "keywords": 5,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/concrete-slab-cost-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Materials",
+  "name": "Concrete Slab Cost Calculator",
+  "primary": "concrete slab cost calculator",
+  "secondary": [
+   "concrete cost calculator",
+   "calculator concrete yards",
+   "figure concrete cost",
+   "concrete cubic yard estimator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 5400,
+   "primaryKd": 22,
+   "primaryCpc": 2.04,
+   "clusterVolume": 20400,
+   "kdRange": [
+    22,
+    29
+   ],
+   "keywords": 5,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/roofing-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Flooring & roofing",
+  "name": "Roofing Calculator",
+  "primary": "roofing calculator",
+  "secondary": [
+   "roofing square calculator",
+   "calculating rafter length in roofing"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 12100,
+   "primaryKd": 37,
+   "primaryCpc": 6.27,
+   "clusterVolume": 14240,
+   "kdRange": [
+    10,
+    37
+   ],
+   "keywords": 5,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/tile-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Flooring & roofing",
+  "name": "Tile Calculator",
+  "primary": "tile calculator",
+  "secondary": [
+   "tile estimator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 36,
+   "primaryCpc": 0.9,
+   "clusterVolume": 11500,
+   "kdRange": [
+    28,
+    36
+   ],
+   "keywords": 2,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/construction/stair-stringer-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Lumber & framing",
+  "name": "Stair Stringer Calculator",
+  "primary": "stair stringer calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 29,
+   "primaryCpc": 0.09,
+   "clusterVolume": 9900,
+   "kdRange": [
+    29,
+    29
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/rafter-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Lumber & framing",
+  "name": "Rafter Calculator",
+  "primary": "rafter calculator",
+  "secondary": [
+   "rafter length calculator",
+   "roof rafter calculator",
+   "rafter dimensions calculator",
+   "rafter angle calculator",
+   "rafter calculator with birdsmouth",
+   "rafter calculator by pitch",
+   "how to calculate rafter length",
+   "how to figure rafter length",
+   "rafter span calculator",
+   "figure rafter length",
+   "calculate rafter length",
+   "rafter length calculations"
+  ],
+  "faqCandidates": [
+   "what is a rafter",
+   "how to figure rafter length",
+   "how to calculate rafter length",
+   "how to find rafter length",
+   "how do you calculate rafter length",
+   "how do you cut a rafter",
+   "how to determine rafter length",
+   "how to measure rafter length"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 5400,
+   "primaryKd": 10,
+   "primaryCpc": 1.91,
+   "clusterVolume": 69570,
+   "kdRange": [
+    1,
+    48
+   ],
+   "keywords": 255,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/construction/pool-salt-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": "Pools",
+  "name": "Pool Salt Calculator",
+  "primary": "pool salt calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 2,
+   "primaryCpc": 0.85,
+   "clusterVolume": 6600,
+   "kdRange": [
+    2,
+    2
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/percent-off-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": "Shopping & discounts",
+  "name": "Percent Off Calculator",
+  "primary": "percent off calculator",
+  "secondary": [
+   "calculate the percentage off"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 3200,
+   "kdRange": [
+    20,
+    25
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/tip-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": "Shopping & discounts",
+  "name": "Tip Calculator",
+  "primary": "tip calculator",
+  "secondary": [
+   "gratuity calculator",
+   "tip calculator for haircut"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": null,
+   "primaryKd": null,
+   "primaryCpc": null,
+   "clusterVolume": 7200,
+   "kdRange": [
+    25,
+    28
+   ],
+   "keywords": 2,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/3d-printing-cost-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": "Pricing & business",
+  "name": "3D Printing Cost Calculator",
+  "primary": "3d printing cost calculator",
+  "secondary": [
+   "calculate cost of 3d printing",
+   "3d print cost calculator",
+   "3d printer cost calculator",
+   "3d print cost calculator free",
+   "3d printing cost spreadsheet",
+   "3d print calculator cost",
+   "3d printing calculator cost",
+   "3d print cost estimate"
+  ],
+  "faqCandidates": [
+   "how much does it cost to get something 3d printed",
+   "how much do 3d printer materials cost",
+   "how to calculate the cost of 3d printing",
+   "how much cost 3d printer",
+   "how much cost 3d printing",
+   "how much do 3d printing services cost",
+   "how to calculate 3d printing cost",
+   "how much does it cost to buy a 3d printer"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 5710,
+   "kdRange": [
+    6,
+    49
+   ],
+   "keywords": 36,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/food/pizza-dough-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": "Baking & dough",
+  "name": "Pizza Dough Calculator",
+  "primary": "pizza dough calculator",
+  "secondary": [
+   "neapolitan pizza dough calculator",
+   "baker's percentage calculator",
+   "pizza dough recipe calculator",
+   "pizza dough hydration",
+   "what is baker's percentage"
+  ],
+  "faqCandidates": [
+   "how to make homemade pizza dough",
+   "how to make pizza dough",
+   "how to to make pizza dough",
+   "how to make pizza dough recipe",
+   "how do i make pizza dough",
+   "how to make pizza with dough",
+   "how to make pizza dough from scratch",
+   "how do you make pizza dough"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 17,
+   "primaryCpc": 1,
+   "clusterVolume": 153290,
+   "kdRange": [
+    8,
+    72
+   ],
+   "keywords": 185,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/food/sourdough-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": "Baking & dough",
+  "name": "Sourdough Calculator",
+  "primary": "sourdough calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 11,
+   "primaryCpc": 0,
+   "clusterVolume": 1600,
+   "kdRange": [
+    11,
+    11
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-pregnancy-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": "Dogs",
+  "name": "Dog Pregnancy Calculator",
+  "primary": "dog pregnancy calculator",
+  "secondary": [
+   "calculator dog pregnancy",
+   "dog pregnancy estimator",
+   "pregnancy in dogs calculator",
+   "dog gestation calculator",
+   "dog pregnancy calendar",
+   "dog pregnancy timeline",
+   "dog pregnancy due date calculator",
+   "dog calendar for pregnancy",
+   "pregnancy in dogs calendar",
+   "calendar dog pregnancy",
+   "pregnancy dog calendar"
+  ],
+  "faqCandidates": [
+   "where do dogs carry their puppies during pregnancy",
+   "how many month dog pregnancy",
+   "when do dogs start to show pregnancy",
+   "when do dogs start lactating in pregnancy",
+   "do dogs understand pregnancy"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 14,
+   "primaryCpc": 3.18,
+   "clusterVolume": 37280,
+   "kdRange": [
+    1,
+    50
+   ],
+   "keywords": 207,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/pets/puppy-weight-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": "Dogs",
+  "name": "Puppy Weight Calculator",
+  "primary": "puppy weight calculator",
+  "secondary": [
+   "determine puppy weight",
+   "dog weight calculator",
+   "puppy growth calculator",
+   "puppy size calculator",
+   "puppy weight estimator",
+   "puppy weight predictor",
+   "how big will my puppy get",
+   "puppy growth chart",
+   "when do puppies stop growing",
+   "how to weigh a puppy",
+   "puppy weight size predictor",
+   "dog weight estimator"
+  ],
+  "faqCandidates": [
+   "when do puppies stop growing",
+   "how big will my puppy get",
+   "how big will puppy get",
+   "when is a puppy full grown",
+   "how big will my dog get",
+   "how big do dogs grow",
+   "what age do puppies stop growing",
+   "how to tell how big a puppy will get"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 12100,
+   "primaryKd": 18,
+   "primaryCpc": 2.38,
+   "clusterVolume": 76300,
+   "kdRange": [
+    5,
+    46
+   ],
+   "keywords": 148,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/sports/bowling-score-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": "Bowling",
+  "name": "Bowling Score Calculator",
+  "primary": "bowling score calculator",
+  "secondary": [
+   "bowling scoring calculator",
+   "how to score in bowling calculator",
+   "bowling score calculator frame by frame",
+   "how to calculate bowling average"
+  ],
+  "faqCandidates": [
+   "how to calculate bowling score",
+   "how to score in bowling calculator",
+   "how to calculate bowling average",
+   "how to calculate score in bowling",
+   "how to calculate a bowling score",
+   "how to calculate bowling scores"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 4400,
+   "primaryKd": 15,
+   "primaryCpc": 2.36,
+   "clusterVolume": 5260,
+   "kdRange": [
+    1,
+    33
+   ],
+   "keywords": 10,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/sports/bike-gear-ratio-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": "Cycling",
+  "name": "Bike Gear Ratio Calculator",
+  "primary": "bike gear ratio calculator",
+  "secondary": [
+   "bicycle gear calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 25,
+   "primaryCpc": 0.92,
+   "clusterVolume": 1900,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/physics/speed-distance-time-calculator/",
+  "type": "calculator",
+  "category": "physics",
+  "subcategory": "Motion",
+  "name": "Speed Distance Time Calculator",
+  "primary": "speed distance time calculator",
+  "secondary": [
+   "convert speed and distance to time",
+   "time calculator for speed and distance"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 3600,
+   "primaryKd": 25,
+   "primaryCpc": 0,
+   "clusterVolume": 10100,
+   "kdRange": [
+    25,
+    29
+   ],
+   "keywords": 3,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/education/grade-calculator/",
+  "type": "calculator",
+  "category": "education",
+  "subcategory": "Grades",
+  "name": "Grade Calculator",
+  "primary": "grade calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 550000,
+   "primaryKd": 52,
+   "primaryCpc": 0,
+   "clusterVolume": 562100,
+   "kdRange": [
+    23,
+    52
+   ],
+   "keywords": 2,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/education/final-grade-calculator/",
+  "type": "calculator",
+  "category": "education",
+  "subcategory": "Grades",
+  "name": "Final Grade Calculator",
+  "primary": "final grade calculator",
+  "secondary": [],
+  "faqCandidates": [
+   "what do i need on my final"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 1,
+  "status": "launch",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 165000,
+   "primaryKd": 49,
+   "primaryCpc": 0,
+   "clusterVolume": 170400,
+   "kdRange": [
+    24,
+    49
+   ],
+   "keywords": 2,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/sports/golf-handicap-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": null,
+  "name": "Golf Handicap Calculator",
+  "primary": "golf handicap calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 28,
+   "primaryCpc": 1.09,
+   "clusterVolume": 9900,
+   "kdRange": [
+    28,
+    28
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/cross-stitch-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Cross Stitch Calculator",
+  "primary": "cross stitch calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 4400,
+   "primaryKd": 15,
+   "primaryCpc": 0.05,
+   "clusterVolume": 4400,
+   "kdRange": [
+    15,
+    15
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/pto-accrual-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "PTO Accrual Calculator",
+  "primary": "pto accrual calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 7,
+   "primaryCpc": 2.62,
+   "clusterVolume": 2400,
+   "kdRange": [
+    7,
+    7
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/aquarium-volume-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Aquarium Volume Calculator",
+  "primary": "aquarium volume calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 21,
+   "primaryCpc": 0.03,
+   "clusterVolume": 2400,
+   "kdRange": [
+    21,
+    21
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/cat-age-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Cat Age Calculator",
+  "primary": "cat age calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 27,
+   "primaryCpc": 0.15,
+   "clusterVolume": 2400,
+   "kdRange": [
+    27,
+    27
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/raised-bed-soil-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Raised Bed Soil Calculator",
+  "primary": "raised bed soil calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 25,
+   "primaryCpc": 0.08,
+   "clusterVolume": 2900,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/plant-spacing-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Plant Spacing Calculator",
+  "primary": "plant spacing calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 15,
+   "primaryCpc": 1.63,
+   "clusterVolume": 1600,
+   "kdRange": [
+    15,
+    15
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/sports/swim-pace-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": null,
+  "name": "Swim Pace Calculator",
+  "primary": "swim pace calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 17,
+   "primaryCpc": 0,
+   "clusterVolume": 1300,
+   "kdRange": [
+    17,
+    17
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/photo/depth-of-field-calculator/",
+  "type": "calculator",
+  "category": "photo",
+  "subcategory": null,
+  "name": "Depth of Field Calculator",
+  "primary": "depth of field calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1300,
+   "primaryKd": 28,
+   "primaryCpc": 0,
+   "clusterVolume": 1300,
+   "kdRange": [
+    28,
+    28
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/sports/race-time-predictor/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": null,
+  "name": "Race Time Predictor",
+  "primary": "race time predictor",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 880,
+   "primaryKd": 26,
+   "primaryCpc": 0,
+   "clusterVolume": 880,
+   "kdRange": [
+    26,
+    26
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/yarn-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Yarn Calculator",
+  "primary": "yarn calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 880,
+   "primaryKd": 22,
+   "primaryCpc": 0.15,
+   "clusterVolume": 880,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/dli-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "DLI Calculator",
+  "primary": "dli calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 880,
+   "primaryKd": 25,
+   "primaryCpc": 0.1,
+   "clusterVolume": 880,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/coffee-ratio-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Coffee Ratio Calculator",
+  "primary": "coffee ratio calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 16,
+   "primaryCpc": 0.4,
+   "clusterVolume": 720,
+   "kdRange": [
+    16,
+    16
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/turkey-cooking-time-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Turkey Cooking Time Calculator",
+  "primary": "turkey cooking time calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 720,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/fence-post-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Fence Post Calculator",
+  "primary": "fence post calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 16,
+   "primaryCpc": 1.4,
+   "clusterVolume": 720,
+   "kdRange": [
+    16,
+    16
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/towing-capacity-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Towing Capacity Calculator",
+  "primary": "towing capacity calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 28,
+   "primaryCpc": 1.57,
+   "clusterVolume": 720,
+   "kdRange": [
+    28,
+    28
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/math/long-division-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": null,
+  "name": "Long Division Calculator",
+  "primary": "calcul division",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 29,
+   "primaryCpc": 0,
+   "clusterVolume": 6600,
+   "kdRange": [
+    29,
+    29
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/math/hex-calculator/",
+  "type": "calculator",
+  "category": "math",
+  "subcategory": null,
+  "name": "Hex Calculator",
+  "primary": "hex calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 5400,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 5400,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/physics/half-life-calculator/",
+  "type": "calculator",
+  "category": "physics",
+  "subcategory": null,
+  "name": "Half-Life Calculator",
+  "primary": "how to compute half life",
+  "secondary": [],
+  "faqCandidates": [
+   "how to compute half life"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 25,
+   "primaryCpc": 0,
+   "clusterVolume": 2900,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/conversion/conversion-calculator/",
+  "type": "calculator",
+  "category": "conversion",
+  "subcategory": null,
+  "name": "Conversion Calculator",
+  "primary": "conversion chart",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 22200,
+   "primaryKd": 29,
+   "primaryCpc": 0,
+   "clusterVolume": 22200,
+   "kdRange": [
+    29,
+    29
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/auto/tire-size-conversion-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Tire Size Conversion Calculator",
+  "primary": "tire size conversion",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 4400,
+   "primaryKd": 23,
+   "primaryCpc": 0,
+   "clusterVolume": 4400,
+   "kdRange": [
+    23,
+    23
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/distance-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Distance Calculator",
+  "primary": "how far from",
+  "secondary": [],
+  "faqCandidates": [
+   "how far from"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 2,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 3600,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 3600,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/auto/tongue-weight-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Tongue Weight Calculator",
+  "primary": "tongue weight calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 7,
+   "primaryCpc": 1.25,
+   "clusterVolume": 720,
+   "kdRange": [
+    7,
+    7
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/knitting-gauge-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Knitting Gauge Calculator",
+  "primary": "knitting gauge calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 590,
+   "primaryKd": 7,
+   "primaryCpc": 0.46,
+   "clusterVolume": 590,
+   "kdRange": [
+    7,
+    7
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/chicken-coop-size-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Chicken Coop Size Calculator",
+  "primary": "chicken coop size calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 590,
+   "primaryKd": 8,
+   "primaryCpc": 0.22,
+   "clusterVolume": 590,
+   "kdRange": [
+    8,
+    8
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/ev-charging-cost-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "EV Charging Cost Calculator",
+  "primary": "ev charging cost calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 590,
+   "primaryKd": 21,
+   "primaryCpc": 1.5,
+   "clusterVolume": 590,
+   "kdRange": [
+    21,
+    21
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/clay-shrinkage-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Clay Shrinkage Calculator",
+  "primary": "clay shrinkage calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 480,
+   "primaryKd": 7,
+   "primaryCpc": 0,
+   "clusterVolume": 480,
+   "kdRange": [
+    7,
+    7
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/candle-fragrance-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Candle Fragrance Calculator",
+  "primary": "candle fragrance calculator",
+  "secondary": [
+   "how much fragrance oil per pound of wax",
+   "how much fragrance oil for candles"
+  ],
+  "faqCandidates": [
+   "how much fragrance oil per pound of wax",
+   "how much fragrance oil for candles"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 480,
+   "primaryKd": 16,
+   "primaryCpc": 1.04,
+   "clusterVolume": 950,
+   "kdRange": [
+    11,
+    16
+   ],
+   "keywords": 3,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/garden/seed-starting-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Seed Starting Calculator",
+  "primary": "seed starting calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 480,
+   "primaryKd": 20,
+   "primaryCpc": 0,
+   "clusterVolume": 480,
+   "kdRange": [
+    20,
+    20
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/brine-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Brine Calculator",
+  "primary": "brine calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 390,
+   "primaryKd": 21,
+   "primaryCpc": 0,
+   "clusterVolume": 390,
+   "kdRange": [
+    21,
+    21
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/cold-brew-ratio-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Cold Brew Ratio Calculator",
+  "primary": "cold brew ratio calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 320,
+   "primaryKd": 16,
+   "primaryCpc": 0,
+   "clusterVolume": 320,
+   "kdRange": [
+    16,
+    16
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/bread-hydration-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Bread Hydration Calculator",
+  "primary": "bread hydration calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 260,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 260,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/photo/crop-factor-calculator/",
+  "type": "calculator",
+  "category": "photo",
+  "subcategory": null,
+  "name": "Crop Factor Calculator",
+  "primary": "crop factor calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 260,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 260,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/embroidery-pricing-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Embroidery Pricing Calculator",
+  "primary": "embroidery pricing calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 210,
+   "primaryKd": 11,
+   "primaryCpc": 6.54,
+   "clusterVolume": 210,
+   "kdRange": [
+    11,
+    11
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/filament-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Filament Calculator",
+  "primary": "filament calculator",
+  "secondary": [
+   "3d printer filament cost calculator",
+   "how much does 3d printer filament cost"
+  ],
+  "faqCandidates": [
+   "how much does 3d printer filament cost"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 210,
+   "primaryKd": 16,
+   "primaryCpc": 0,
+   "clusterVolume": 600,
+   "kdRange": [
+    16,
+    17
+   ],
+   "keywords": 2,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-kmt"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/balloon-arch-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Balloon Arch Calculator",
+  "primary": "balloon arch calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 210,
+   "primaryKd": 0,
+   "primaryCpc": 0,
+   "clusterVolume": 210,
+   "kdRange": [
+    0,
+    0
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/crochet-pricing-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Crochet Pricing Calculator",
+  "primary": "crochet pricing calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 210,
+   "primaryKd": 2,
+   "primaryCpc": 0.46,
+   "clusterVolume": 210,
+   "kdRange": [
+    2,
+    2
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/recipe-scaling-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Recipe Scaling Calculator",
+  "primary": "recipe scaling calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 210,
+   "primaryKd": 23,
+   "primaryCpc": 0,
+   "clusterVolume": 210,
+   "kdRange": [
+    23,
+    23
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/3d-print-time-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "3D Print Time Calculator",
+  "primary": "3d print time calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 140,
+   "primaryKd": 7,
+   "primaryCpc": 3.98,
+   "clusterVolume": 140,
+   "kdRange": [
+    7,
+    7
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/rv-solar-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "RV Solar Calculator",
+  "primary": "rv solar calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 140,
+   "primaryKd": 3,
+   "primaryCpc": 0.62,
+   "clusterVolume": 140,
+   "kdRange": [
+    3,
+    3
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/battery-bank-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Battery Bank Calculator",
+  "primary": "battery bank calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 140,
+   "primaryKd": 25,
+   "primaryCpc": 2.12,
+   "clusterVolume": 140,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/photo/print-size-calculator/",
+  "type": "calculator",
+  "category": "photo",
+  "subcategory": null,
+  "name": "Print Size Calculator",
+  "primary": "print size calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 110,
+   "primaryKd": 1,
+   "primaryCpc": 0,
+   "clusterVolume": 110,
+   "kdRange": [
+    1,
+    1
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/party-food-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Party Food Calculator",
+  "primary": "party food calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "queue",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 110,
+   "primaryKd": 22,
+   "primaryCpc": 0,
+   "clusterVolume": 110,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-age-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Dog Age Calculator",
+  "primary": "dog age calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 22200,
+   "primaryKd": 41,
+   "primaryCpc": 0.14,
+   "clusterVolume": 22200,
+   "kdRange": [
+    41,
+    41
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/tire-size-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Tire Size Calculator",
+  "primary": "tire size calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 110000,
+   "primaryKd": 65,
+   "primaryCpc": 1.31,
+   "clusterVolume": 110000,
+   "kdRange": [
+    65,
+    65
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/sports/pace-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": null,
+  "name": "Pace Calculator",
+  "primary": "pace calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 74000,
+   "primaryKd": 51,
+   "primaryCpc": 1.29,
+   "clusterVolume": 74000,
+   "kdRange": [
+    51,
+    51
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/sports/one-rep-max-calculator/",
+  "type": "calculator",
+  "category": "sports",
+  "subcategory": null,
+  "name": "One Rep Max Calculator",
+  "primary": "one rep max calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 74000,
+   "primaryKd": 58,
+   "primaryCpc": 0.33,
+   "clusterVolume": 74000,
+   "kdRange": [
+    58,
+    58
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/education/easy-grader/",
+  "type": "calculator",
+  "category": "education",
+  "subcategory": null,
+  "name": "Easy Grader",
+  "primary": "easy grader",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 40500,
+   "primaryKd": 50,
+   "primaryCpc": 1.75,
+   "clusterVolume": 40500,
+   "kdRange": [
+    50,
+    50
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/random-team-generator/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": null,
+  "name": "Random Team Generator",
+  "primary": "random team generator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 18100,
+   "primaryKd": 53,
+   "primaryCpc": 0,
+   "clusterVolume": 18100,
+   "kdRange": [
+    53,
+    53
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/btu-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "BTU Calculator",
+  "primary": "btu calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 40,
+   "primaryCpc": 0.74,
+   "clusterVolume": 6600,
+   "kdRange": [
+    40,
+    40
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk",
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/pets/cat-calorie-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Cat Calorie Calculator",
+  "primary": "cat calorie calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 3600,
+   "primaryKd": 41,
+   "primaryCpc": 1.18,
+   "clusterVolume": 3600,
+   "kdRange": [
+    41,
+    41
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/photo/golden-hour-calculator/",
+  "type": "calculator",
+  "category": "photo",
+  "subcategory": null,
+  "name": "Golden Hour Calculator",
+  "primary": "golden hour calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1000,
+   "primaryKd": 33,
+   "primaryCpc": 0,
+   "clusterVolume": 1000,
+   "kdRange": [
+    33,
+    33
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/rent-split-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Rent Split Calculator",
+  "primary": "rent split calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 35,
+   "primaryCpc": 1.6,
+   "clusterVolume": 1900,
+   "kdRange": [
+    35,
+    35
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/education/reading-level-checker/",
+  "type": "calculator",
+  "category": "education",
+  "subcategory": null,
+  "name": "Reading Level Checker",
+  "primary": "reading level checker",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 48,
+   "primaryCpc": 3.53,
+   "clusterVolume": 2400,
+   "kdRange": [
+    48,
+    48
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/education/rubric-maker/",
+  "type": "calculator",
+  "category": "education",
+  "subcategory": null,
+  "name": "Rubric Maker",
+  "primary": "rubric maker",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 40,
+   "primaryCpc": 0.64,
+   "clusterVolume": 2400,
+   "kdRange": [
+    40,
+    40
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/auto/solar-panel-calculator/",
+  "type": "calculator",
+  "category": "auto",
+  "subcategory": null,
+  "name": "Solar Panel Calculator",
+  "primary": "solar panel calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 71,
+   "primaryCpc": 2.96,
+   "clusterVolume": 8100,
+   "kdRange": [
+    71,
+    71
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/frost-date-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Frost Date Calculator",
+  "primary": "frost date calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 590,
+   "primaryKd": 33,
+   "primaryCpc": 0.02,
+   "clusterVolume": 590,
+   "kdRange": [
+    33,
+    33
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/photo/hyperfocal-distance-calculator/",
+  "type": "calculator",
+  "category": "photo",
+  "subcategory": null,
+  "name": "Hyperfocal Distance Calculator",
+  "primary": "hyperfocal distance calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "later-kd",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 260,
+   "primaryKd": 50,
+   "primaryCpc": 0,
+   "clusterVolume": 260,
+   "kdRange": [
+    50,
+    50
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/concrete-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Concrete Calculator",
+  "primary": "concrete calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 301000,
+   "primaryKd": 49,
+   "primaryCpc": 0.93,
+   "clusterVolume": 301000,
+   "kdRange": [
+    49,
+    49
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/drywall-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Drywall Calculator",
+  "primary": "drywall calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 12100,
+   "primaryKd": 35,
+   "primaryCpc": 0.37,
+   "clusterVolume": 12100,
+   "kdRange": [
+    35,
+    35
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/paver-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Paver Calculator",
+  "primary": "paver calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 42,
+   "primaryCpc": 0.51,
+   "clusterVolume": 6600,
+   "kdRange": [
+    42,
+    42
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/mulch-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Mulch Calculator",
+  "primary": "mulch calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 27100,
+   "primaryKd": 50,
+   "primaryCpc": 0.17,
+   "clusterVolume": 27100,
+   "kdRange": [
+    50,
+    50
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/pool-volume-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Pool Volume Calculator",
+  "primary": "pool volume calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 19,
+   "primaryCpc": 0.12,
+   "clusterVolume": 8100,
+   "kdRange": [
+    19,
+    19
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/garden/pond-liner-calculator/",
+  "type": "calculator",
+  "category": "garden",
+  "subcategory": null,
+  "name": "Pond Liner Calculator",
+  "primary": "pond liner calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1000,
+   "primaryKd": 10,
+   "primaryCpc": 0.35,
+   "clusterVolume": 1000,
+   "kdRange": [
+    10,
+    10
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/construction/deck-stain-calculator/",
+  "type": "calculator",
+  "category": "construction",
+  "subcategory": null,
+  "name": "Deck Stain Calculator",
+  "primary": "deck stain calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 720,
+   "primaryKd": 16,
+   "primaryCpc": 0.72,
+   "clusterVolume": 720,
+   "kdRange": [
+    16,
+    16
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/epoxy-resin-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Epoxy Resin Calculator",
+  "primary": "epoxy resin calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 12,
+   "primaryCpc": 0.16,
+   "clusterVolume": 1600,
+   "kdRange": [
+    12,
+    12
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/pets/dog-food-calculator/",
+  "type": "calculator",
+  "category": "pets",
+  "subcategory": null,
+  "name": "Dog Food Calculator",
+  "primary": "dog food calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 5400,
+   "primaryKd": 36,
+   "primaryCpc": 1.62,
+   "clusterVolume": 5400,
+   "kdRange": [
+    36,
+    36
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/prorated-rent-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Prorated Rent Calculator",
+  "primary": "prorated rent calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 9900,
+   "primaryKd": 26,
+   "primaryCpc": 0.06,
+   "clusterVolume": 9900,
+   "kdRange": [
+    26,
+    26
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/statistics/random-name-picker/",
+  "type": "calculator",
+  "category": "statistics",
+  "subcategory": null,
+  "name": "Random Name Picker",
+  "primary": "random name picker",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 4,
+  "status": "skip-vendor-serp",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 33100,
+   "primaryKd": 93,
+   "primaryCpc": 0.37,
+   "clusterVolume": 33100,
+   "kdRange": [
+    93,
+    93
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/finance/cd-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "CD Calculator",
+  "primary": "bank certificate calculator",
+  "secondary": [
+   "cd rates calculator",
+   "certificate of deposit calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 22200,
+   "primaryKd": 25,
+   "primaryCpc": 0,
+   "clusterVolume": 31000,
+   "kdRange": [
+    22,
+    26
+   ],
+   "keywords": 3,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/apr-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "APR Calculator",
+  "primary": "apr rate calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 23,
+   "primaryCpc": 0,
+   "clusterVolume": 2400,
+   "kdRange": [
+    23,
+    23
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/business-loan-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Business Loan Calculator",
+  "primary": "business calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 19,
+   "primaryCpc": 0,
+   "clusterVolume": 1900,
+   "kdRange": [
+    19,
+    19
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/finance/mileage-calculator/",
+  "type": "calculator",
+  "category": "finance",
+  "subcategory": null,
+  "name": "Mileage Calculator",
+  "primary": "mileage calculator 2025",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1600,
+   "primaryKd": 23,
+   "primaryCpc": 0,
+   "clusterVolume": 1600,
+   "kdRange": [
+    23,
+    23
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/health/army-body-fat-calculator/",
+  "type": "calculator",
+  "category": "health",
+  "subcategory": null,
+  "name": "Army Body Fat Calculator",
+  "primary": "army height and weight calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 25,
+   "primaryCpc": 0,
+   "clusterVolume": 6600,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/health/target-heart-rate-calculator/",
+  "type": "calculator",
+  "category": "health",
+  "subcategory": null,
+  "name": "Target Heart Rate Calculator",
+  "primary": "max hr calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 3600,
+   "primaryKd": 25,
+   "primaryCpc": 0,
+   "clusterVolume": 3600,
+   "kdRange": [
+    25,
+    25
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/health/fat-intake-calculator/",
+  "type": "calculator",
+  "category": "health",
+  "subcategory": null,
+  "name": "Fat Intake Calculator",
+  "primary": "fat requirement calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 2900,
+   "primaryKd": 24,
+   "primaryCpc": 0,
+   "clusterVolume": 2900,
+   "kdRange": [
+    24,
+    24
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/health/macro-calculator/",
+  "type": "calculator",
+  "category": "health",
+  "subcategory": null,
+  "name": "Macro Calculator",
+  "primary": "bulking calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 28,
+   "primaryCpc": 0,
+   "clusterVolume": 1900,
+   "kdRange": [
+    28,
+    28
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/health/pregnancy-conception-calculator/",
+  "type": "calculator",
+  "category": "health",
+  "subcategory": null,
+  "name": "Pregnancy Conception Calculator",
+  "primary": "when was i conceived",
+  "secondary": [],
+  "faqCandidates": [
+   "when was i conceived"
+  ],
+  "parent": null,
+  "family": null,
+  "wave": 5,
+  "status": "ymyl-later",
+  "adsense": "green",
+  "evidence": {
+   "primaryVolume": 4400,
+   "primaryKd": 15,
+   "primaryCpc": 0,
+   "clusterVolume": 4400,
+   "kdRange": [
+    15,
+    15
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/food/abv-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "ABV Calculator",
+  "primary": "abv calculator",
+  "secondary": [
+   "alcohol by volume calculator",
+   "cocktail abv calculator"
+  ],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 6,
+  "status": "not-green",
+  "adsense": "not-green",
+  "reason": "alcohol-adjacent (Publisher Restrictions: alcohol)",
+  "evidence": {
+   "primaryVolume": 14800,
+   "primaryKd": 31,
+   "primaryCpc": 5.42,
+   "clusterVolume": 14800,
+   "kdRange": [
+    31,
+    31
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/wedding-alcohol-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Wedding Alcohol Calculator",
+  "primary": "wedding alcohol calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 6,
+  "status": "not-green",
+  "adsense": "not-green",
+  "reason": "alcohol-adjacent",
+  "evidence": {
+   "primaryVolume": 2400,
+   "primaryKd": 12,
+   "primaryCpc": 0.55,
+   "clusterVolume": 2400,
+   "kdRange": [
+    12,
+    12
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/food/priming-sugar-calculator/",
+  "type": "calculator",
+  "category": "food",
+  "subcategory": null,
+  "name": "Priming Sugar Calculator",
+  "primary": "priming sugar calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 6,
+  "status": "not-green",
+  "adsense": "not-green",
+  "reason": "beer-brewing, alcohol-adjacent",
+  "evidence": {
+   "primaryVolume": 1900,
+   "primaryKd": 13,
+   "primaryCpc": 0,
+   "clusterVolume": 1900,
+   "kdRange": [
+    13,
+    13
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ },
+ {
+  "url": "/other/bra-size-calculator/",
+  "type": "calculator",
+  "category": "other",
+  "subcategory": null,
+  "name": "Bra Size Calculator",
+  "primary": "bras measurement calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 6,
+  "status": "not-green",
+  "adsense": "not-green",
+  "reason": "lingerie-adjacent (sexual merchandise risk)",
+  "evidence": {
+   "primaryVolume": 6600,
+   "primaryKd": 27,
+   "primaryCpc": 0,
+   "clusterVolume": 6600,
+   "kdRange": [
+    27,
+    27
+   ],
+   "keywords": 1,
+   "sources": [
+    "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/everyday-life/soap-lye-calculator/",
+  "type": "calculator",
+  "category": "everyday-life",
+  "subcategory": null,
+  "name": "Soap Lye Calculator",
+  "primary": "soap lye calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 6,
+  "status": "not-green",
+  "adsense": "not-green",
+  "reason": "chemical-burn safety liability",
+  "evidence": {
+   "primaryVolume": 590,
+   "primaryKd": 22,
+   "primaryCpc": 0.17,
+   "clusterVolume": 590,
+   "kdRange": [
+    22,
+    22
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
+   ]
+  }
+ }
+]

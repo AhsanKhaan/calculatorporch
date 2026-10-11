@@ -1,0 +1,23 @@
+# Daily rebuild (docs/10 §5): date-dependent pages such as /everyday-life/day-counter/10-days-from-today/ show the
+# build date's answer in static HTML, so Cloudflare Pages rebuilds once a day.
+# Security (SEC-DEP-08, gha-security-review): schedule-only, so external users can't trigger it; no checkout; no token
+# (permissions: {}); the deploy-hook URL is an Actions secret passed through env, never interpolated into the script.
+name: daily-rebuild
+
+on:
+  schedule:
+    - cron: '17 5 * * *' # 05:17 UTC every day
+
+permissions: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Trigger the Cloudflare Pages deploy hook
+        env:
+          HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CLOUDFLARE_DEPLOY_HOOK_URL is not set yet; skipping."; exit 0; fi
+          curl -fsS -X POST "$HOOK" -o /dev/null
