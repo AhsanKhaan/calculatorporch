@@ -9,10 +9,26 @@ export default function TrustFooter({ tool }: { tool: Tool }) {
   return (
     <section aria-labelledby="about-tool" className="trust">
       <h2 id="about-tool">About this calculator</h2>
+      <div className="author">
+        <span className="monogram" aria-hidden="true">
+          {SITE.author.name
+            .split(' ')
+            .map((w) => w[0])
+            .join('')}
+        </span>
+        <p>
+          <Link href={SITE.author.path} className="name">
+            {SITE.author.name}
+          </Link>
+          <br />
+          <span className="muted">
+            Last reviewed <time dateTime={tool.updated}>{shortDate(tool.updated)}</time>
+          </span>
+        </p>
+      </div>
       <p>
-        Written and maintained by <Link href={SITE.author.path}>{SITE.author.name}</Link>. See how every number is
-        calculated, and the test cases checked on every update, on the <Link href="/methodology/">methodology page</Link>.
-        Last reviewed <time dateTime={tool.updated}>{shortDate(tool.updated)}</time>.
+        Written and maintained by {SITE.author.name}. See how every number is calculated, and the test cases checked on every
+        update, on the <Link href="/methodology/">methodology page</Link>.
       </p>
       {/* No empty "Sources" heading: the release gate (check:release) requires ≥ 2 before a tool can publish. */}
       {tool.sources.length ? (

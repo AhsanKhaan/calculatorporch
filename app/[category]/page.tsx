@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import Icon, { categoryIcon } from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import ToolList from '@/components/ToolList';
 import { categoryPath, publishedCategories, publishedInstances } from '@/content/registry';
@@ -35,7 +37,12 @@ export default async function CategoryPage({ params }: Props) {
     <>
       <JsonLd data={collectionGraph({ path: categoryPath(c), name: c.title, description: c.description, crumbs: crumbsForCategory(c), items: all })} />
       <Breadcrumbs crumbs={crumbsForCategory(c)} />
-      <h1>{c.name} Calculators</h1>
+      <div className="title-row">
+        <span className="icon-tile lg">
+          <Icon name={categoryIcon(c.slug)} size={24} />
+        </span>
+        <h1>{c.name} Calculators</h1>
+      </div>
       <p className="lede">{c.intro}</p>
 
       {popular.length > 3 ? (
@@ -45,11 +52,14 @@ export default async function CategoryPage({ params }: Props) {
         </section>
       ) : null}
 
-      {groups.map((g) => (
-        <section key={g.subcategory} className="page-section" aria-labelledby={`sub-${anchorId(g.subcategory)}`}>
-          <h2 id={`sub-${anchorId(g.subcategory)}`}>{g.subcategory}</h2>
-          <ToolList tools={g.tools} />
-        </section>
+      {groups.map((g, n) => (
+        <div key={g.subcategory}>
+          <section className="page-section" aria-labelledby={`sub-${anchorId(g.subcategory)}`}>
+            <h2 id={`sub-${anchorId(g.subcategory)}`}>{g.subcategory}</h2>
+            <ToolList tools={g.tools} reveal />
+          </section>
+          {n === 0 ? <AdSlot id={`category-${c.slug}-inline`} /> : null}
+        </div>
       ))}
 
       {answers.length ? (

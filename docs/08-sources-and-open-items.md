@@ -96,3 +96,11 @@ After each pull, add the new export to `BULK` (or SERP rows to `SERP`) in `resea
 | 2026-10-04 | Maker niche picks; 3D print cost probe tool built and tested (static) |
 | 2026-10-05 (late) | Task A (51 keywords) + Semrush clusters: square footage → batch 2 #1; roofing calculator found ($6.27 CPC); puppy, pizza and board-feet guide keywords moved on-page; one dog-pregnancy guide (34.7K/mo); AdSense rule added to scoring |
 | 2026-10-05 | Plan approved (broad brand, Next.js). Competitor teardown, gap screen, live Google measurements. Semrush data: 88-keyword bulk, calculator.net organic, backlinks, 5 SERP/overview reports. Tier 1 finalized (9 pages); this `finalized/` pack created |
+
+## 6. Open engineering items
+- **First-load JS (2026-10-11 [M]):** about 190 KB gzip on every route (Next.js and React runtime), against the 70 KB budget (docs/04 §8). It dominates lab LCP (FCP waits on JS parse at 4× CPU) and INP. Options, in order of effort:
+  1. Keep the redesign's zero-JS rule: no animation libraries, no web fonts.
+  2. Measure on Cloudflare (HTTP/2 or HTTP/3 with Brotli, prioritized), not on the local HTTP/1.1 preview server.
+  3. Try React Server Components only, with smaller calculator islands, so fewer client components hydrate.
+  4. Longer term: a framework with partial hydration (e.g. Astro islands) for the content pages.
+- **Lab measurement setup:** `scripts/serve-out.mjs` serves uncompressed over HTTP/1.1, which overstates byte costs. For performance A/B tests, use a Brotli server (production-like) and interleave old and new runs.

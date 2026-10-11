@@ -35,9 +35,37 @@ Condensed from playbook v1.1 (`docs/reference/seo-playbook-v1.1.md`) and the app
   - each data table gets its own H2 = its caption ("Tons of gravel per 100 sq ft (including 10% extra)").
 - **Keyword placement:** put the tool name in **one** H2 ("How to use the …"), not in every heading. Tool pages measure 0.6–1.6% exact-match density [M] after this change. There is no target density; never add repeats.
 - **Type scale:**
-  - prose 17 px, line-height 1.65, measure ≤ 70ch;
-  - H1 28–40 px, H2 21–26 px, H3 18 px (fluid with `clamp()`);
-  - system font stack (0 font bytes).
+  - prose 17 px, line-height 1.7, measure ≤ 74ch;
+  - H1 32–48 px (home hero up to 62 px), H2 22–27 px, H3 18 px, all fluid with `clamp()`, tight negative tracking;
+  - **system font stack only** (SF Pro, Segoe UI Variable, Roboto): 0 font bytes. A self-hosted 29 KB Geist subset measured **+1.1 s LCP** on throttled mobile in an A/B test on 2026-10-11 [M], so no web fonts.
+
+### 1b. Visual system and motion (2026-10-11 redesign)
+- **Style:** minimal "Swiss" layout. Slate neutrals, one teal brand colour, and a teal→indigo gradient used sparingly (hero accent, result number, quick-answer bar, answer-card border). Light and dark themes come from `prefers-color-scheme`. All tokens live in `app/globals.css` `:root`; components never use raw hex.
+- **Components:**
+  - translucent header (sticky ≥ 721 px);
+  - calculator as one elevated card (inputs | tinted result panel);
+  - "Quick answer" card;
+  - tool cards with category icons (the whole card is the link);
+  - pill chips for related links;
+  - an author monogram;
+  - a column footer.
+- **Icons:** inline SVG paths drawn for this site (`components/Icon.tsx`). No icon library, no emoji.
+- **Motion (CSS only, no JS animation library):**
+  - hover lift on cards (`transform` + shadow);
+  - a 280 ms "pop" on the headline result after the visitor edits (never on first paint, so LCP is unaffected);
+  - scroll-in "rise" on cards via `animation-timeline: view()` where supported. Transform only: content is never invisible to crawlers.
+  - Everything is off under `prefers-reduced-motion`.
+  - Lottie and other JSON animations are not used. Their runtime alone outweighs all the CSS motion here.
+- **Layout ≥ 1100 px:** content column + 300 px rail. The rail holds the sticky "On this page" and, later, the 300×600 ad.
+- **Ad slots** (`components/AdSlot.tsx`):
+  - server-rendered with a fixed height, so a filled ad never shifts the page;
+  - render **nothing** while `NEXT_PUBLIC_ADS_ENABLED` isn't `"true"`.
+  - Positions:
+    - tool pages: after the whole calculator (280 px), mid-content after the explainer (280 px), and the rail (600 px, desktop only);
+    - home: after the popular tools;
+    - category pages: after the first group;
+    - instance pages: after the table.
+  - Never between the inputs and the result (SEC-ADS-05).
 - **Readability details:**
   - links in running text are underlined (colour alone fails WCAG 1.4.1);
   - formulas are one equation per line, wrapping with a hanging indent;

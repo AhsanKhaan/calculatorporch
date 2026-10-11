@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Byline from '@/components/Byline';
 import DataTable from '@/components/DataTable';
 import Faq from '@/components/Faq';
+import Icon from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import QuickAnswer from '@/components/QuickAnswer';
 import ToolList from '@/components/ToolList';
@@ -66,7 +68,7 @@ export default async function InstancePage({ params }: Props) {
         {i.dateDependent ? <p className="hint">Worked out for {longDate(BUILD_TODAY)}. The calculator below uses your device&apos;s date.</p> : null}
         <p>
           <Link href={i.parent.url} className="parent-link">
-            Open the {i.parent.name} →
+            Open the {i.parent.name} <Icon name="arrow" size={16} />
           </Link>
         </p>
       </section>
@@ -92,6 +94,8 @@ export default async function InstancePage({ params }: Props) {
           <h2 id={tableId}>{i.table.caption}</h2>
           <DataTable labelledBy={tableId} columns={i.table.columns} rows={i.table.rows} />
         </section>
+
+        <AdSlot id="instance-inline" />
 
         <Faq faqs={i.faqs} />
 

@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Byline from '@/components/Byline';
 import Explainer from '@/components/engine/Explainer';
 import Faq from '@/components/Faq';
+import Icon, { categoryIcon } from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import OnThisPage from '@/components/OnThisPage';
 import QuickAnswer from '@/components/QuickAnswer';
@@ -75,14 +77,27 @@ export default async function CalculatorPage({ params }: Props) {
     <>
       <JsonLd data={toolGraph(tool, tool.url, crumbs)} />
       <Breadcrumbs crumbs={crumbs} />
-      <h1>{tool.h1}</h1>
+      <div className="title-row">
+        <span className="icon-tile">
+          <Icon name={categoryIcon(tool.category.slug)} />
+        </span>
+        <h1>{tool.h1}</h1>
+      </div>
       <Byline updated={tool.updated} />
       <QuickAnswer text={tool.directAnswer} />
 
       <Island buildToday={BUILD_TODAY} />
 
-      <OnThisPage items={outline} />
+      {/* Ads: after the whole calculator (never between inputs and result), mid-content, and the desktop rail. */}
+      <AdSlot id="tool-below-calculator" />
 
+      <div className="page-grid">
+        <div className="rail">
+          <div className="rail-inner">
+            <OnThisPage items={outline} />
+            <AdSlot id="tool-rail" variant="rail" />
+          </div>
+        </div>
       <div className="content">
         {instances.length ? (
           <section aria-labelledby="popular-answers">
@@ -113,6 +128,8 @@ export default async function CalculatorPage({ params }: Props) {
 
         {explain ? <Explainer explain={explain} /> : null}
 
+        <AdSlot id="tool-mid-content" />
+
         <Faq faqs={tool.faqs} />
 
         {sib.length ? (
@@ -135,6 +152,7 @@ export default async function CalculatorPage({ params }: Props) {
         ) : null}
 
         <TrustFooter tool={tool} />
+      </div>
       </div>
     </>
   );

@@ -16,7 +16,7 @@
 | Content | Tools: typed TS modules. Guides: MDX (`@next/mdx`) | Validated at build with `zod` |
 | Calculators | Pure functions in `lib/calculators/*.ts` | Run on the server for the default result and on the client for live updates |
 | Tests | Vitest (unit, schema, content), Playwright (e2e), Lighthouse CI | All run in CI before every deploy |
-| Fonts | System font stack (zero bytes), or `next/font` with one variable font subset | No layout shift |
+| Fonts | System font stack (zero bytes). A `next/font` Geist subset was tried and measured +1.1 s LCP on throttled mobile (2026-10-11 [M]), so it was removed | No layout shift, no font bytes |
 | Analytics | GA4 through `next/script` (`lazyOnload`) with Consent Mode, **or** a cookieless analytics service at launch | The playbook needs GA4 for the AI-referral channel; add it with the consent banner |
 | Ads | **None until the playbook §0.2 gate.** An `AdSlot` component exists but renders nothing unless `NEXT_PUBLIC_ADS_ENABLED=true` | Slot heights are reserved when enabled |
 
@@ -203,6 +203,7 @@ Build fails if:
 | CSS | ≤ 20 KB gzip | — |
 
 - No hero images. The LCP element is the H1 or the result card.
+- **Known gap (2026-10-11 [M]):** first-load JS is about 190 KB gzip on every route (Next.js and React runtime), against the 70 KB budget. It is the biggest remaining LCP and INP cost, and it predates the redesign. Options are tracked in docs/08.
 - Fonts don't shift layout (`font-display: swap` + metric fallback, or the system stack).
 - Every client component except `CalculatorShell` and `UnitToggle` is a server component.
 - Analytics loads `lazyOnload`. Future ad slots get fixed `min-height` and never sit inside the inputs or result.

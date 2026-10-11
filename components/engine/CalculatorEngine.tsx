@@ -74,6 +74,8 @@ export default function CalculatorEngine({
   const [actionResult, setActionResult] = useState<ComputeResult | null>(null);
   const [copy, setCopy] = useState<{ status: 'idle' | 'ok' | 'fail'; url: string }>({ status: 'idle', url: '' });
   const [hydrated, setHydrated] = useState(false);
+  // Bumped on every visitor change so the headline result replays a short CSS "pop" (never on first paint: LCP-safe).
+  const [bump, setBump] = useState(0);
   // Once the visitor edits anything, the first-load sync must never overwrite it.
   const touched = useRef(false);
 
@@ -95,6 +97,7 @@ export default function CalculatorEngine({
 
   const onChange = (k: string, v: string) => {
     touched.current = true;
+    setBump((b) => b + 1);
     setActionResult(null);
     setState((s) => applyChange(spec, s, k, v));
   };
@@ -142,7 +145,10 @@ export default function CalculatorEngine({
         ))}
         {spec.action ? (
           <div className="btns">
-            <button type="button" className="primary" onClick={() => setActionResult(spec.action!.run(values, { today }))}>
+            <button type="button" className="primary" onClick={() => {
+                setBump((b) => b + 1);
+                setActionResult(spec.action!.run(values, { today }));
+              }}>
               {spec.action.label}
             </button>
           </div>
@@ -153,7 +159,7 @@ export default function CalculatorEngine({
         {primary ? (
           <>
             <p className="result-label">{primary.label}</p>
-            <p className="price" data-testid="primary-result">
+            <p key={bump} className={bump ? 'price pop' : 'price'} data-testid="primary-result">
               {formatOutput(primary, result.values[primary.key])}
             </p>
           </>

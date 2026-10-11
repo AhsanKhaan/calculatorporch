@@ -1,30 +1,25 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import { adsAllowed } from '@/lib/ads';
-import { SITE } from '@/content/site';
-
 /**
- * Reserved ad slot (docs/04 §1, SEC-CODE-22). Renders NOTHING unless all three locks in lib/ads.ts hold.
- * No ad script exists in this codebase yet: ads are added only after the playbook §0.2 gate, with the
- * phase D CSP (security/02 §5). Never place it inside or between calculator inputs and the result.
+ * Reserved ad slot (docs/04 §1 and §8, SEC-CODE-22, SEC-ADS-05). Server-rendered, so the box and its height are in the
+ * static HTML and a filled ad never shifts the page (CLS ≤ 0.05). The previous client-only version inserted the box
+ * after hydration, which would have shifted every page once ads were switched on.
+ *
+ * - While NEXT_PUBLIC_ADS_ENABLED isn't exactly "true" (every build before the playbook §0.2 gate), it renders NOTHING:
+ *   no empty boxes, no "ad" placeholders.
+ * - No ad script exists in this codebase. When ads go live, the AdSense unit goes inside this box, and its loader must
+ *   also pass the browser-side locks in lib/ads.ts (production host, not webdriver) before requesting an ad.
+ * - Never place it inside or between the calculator inputs and the result.
+ *
+ * Variants: "inline" = responsive in-content unit (280 px reserved); "rail" = 300×600 desktop sidebar (hidden < 1100 px).
  */
-export default function AdSlot({ minHeight = 280 }: { minHeight?: number }) {
-  const [allowed, setAllowed] = useState(false);
+export type AdVariant = 'inline' | 'rail';
 
-  useEffect(() => {
-    // Decided in the browser: hostname and webdriver aren't known at build time.
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time read of browser-only facts
-    setAllowed(
-      adsAllowed({
-        enabledFlag: process.env.NEXT_PUBLIC_ADS_ENABLED,
-        hostname: window.location.hostname,
-        productionHost: SITE.host,
-        webdriver: navigator.webdriver === true,
-      }),
-    );
-  }, []);
+export const adsBuildEnabled = (): boolean => process.env.NEXT_PUBLIC_ADS_ENABLED === 'true';
 
-  if (!allowed) return null;
-  return <aside aria-label="Advertisement" className="ad-slot" style={{ minHeight }} />;
+export default function AdSlot({ id, variant = 'inline' }: { id: string; variant?: AdVariant }) {
+  if (!adsBuildEnabled()) return null;
+  return (
+    <aside aria-label="Advertisement" className={`ad-slot ad-slot--${variant}`} data-ad-slot-id={id}>
+      <span className="ad-label">Advertisement</span>
+    </aside>
+  );
 }
