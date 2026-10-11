@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'gravel',
   name: 'Gravel Calculator',
   title: 'Gravel Calculator: Cubic Yards, Tons and Bags',
-  description: 'Work out how much gravel you need in cubic yards, tons and bags for a driveway, path or patio, by gravel type and depth, with an optional cost estimate.',
+  description: 'Gravel calculator and driveway gravel estimator: how much gravel you need in cubic yards, tons and bags, by gravel type and depth, with a cost estimate.',
   h1: 'Gravel Calculator',
   directAnswer:
     'To figure gravel, multiply length × width × depth in inches ÷ 12 to get cubic feet, then divide by 27 for cubic yards. A 40 by 10 ft driveway 3 inches deep needs about 4.07 cubic yards with 10% extra, roughly 5.7 tons of pea gravel. Choose your gravel type for its weight.',

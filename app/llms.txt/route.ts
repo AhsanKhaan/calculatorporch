@@ -1,4 +1,4 @@
-import { categoryPath, publishedCategories, publishedInstances, publishedTools, TRUST_PAGES } from '@/content/registry';
+import { AUTHOR, categoryMeta, categoryPath, publishedCategories, publishedInstances, publishedTools, TRUST_PAGES } from '@/content/registry';
 import { SITE, absoluteUrl } from '@/content/site';
 
 export const dynamic = 'force-static';
@@ -14,7 +14,7 @@ export function GET() {
     '',
   ];
   for (const c of publishedCategories) {
-    lines.push(`## ${c.name}`, '', `- [${c.name} calculators](${absoluteUrl(categoryPath(c))}): ${c.description}`);
+    lines.push(`## ${c.name}`, '', `- [${c.name} calculators](${absoluteUrl(categoryPath(c))}): ${categoryMeta(c).description}`);
     for (const t of publishedTools.filter((x) => x.category.slug === c.slug)) lines.push(`- [${t.name}](${absoluteUrl(t.url)}): ${t.description}`);
     lines.push('');
   }
@@ -22,6 +22,7 @@ export function GET() {
   for (const i of publishedInstances) lines.push(`- [${i.name}](${absoluteUrl(i.url)}): ${i.description}`);
   lines.push(`- [All calculators A–Z](${absoluteUrl('/calculators/')})`);
   for (const p of TRUST_PAGES) lines.push(`- [${p.name}](${absoluteUrl(p.path)})`);
+  lines.push(`- [About the author, ${SITE.author.name}](${absoluteUrl(AUTHOR.path)})`);
   lines.push(`- [Full text for LLMs](${absoluteUrl('/llms-full.txt')})`, '');
   return new Response(lines.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 }

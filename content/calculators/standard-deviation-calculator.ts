@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'standard-deviation',
   name: 'Standard Deviation Calculator',
   title: 'Standard Deviation Calculator: Sample and Population',
-  description: 'Find the standard deviation, variance and mean of a data set, as a sample or a population, with every step of the calculation shown.',
+  description: 'Standard deviation calculator with every step of the calculation shown: the standard deviation, variance and mean of a sample or a population.',
   h1: 'Standard Deviation Calculator',
   directAnswer:
     'Standard deviation measures how spread out numbers are around their mean: find the mean, average the squared distances from it, and take the square root. For 2, 4, 4, 4, 5, 5, 7, 9 the mean is 5 and the population standard deviation is 2; as a sample it is about 2.138.',

@@ -88,8 +88,8 @@
   a:hover { text-decoration-color: currentColor; }
   :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
   h1, h2, h3 { color: var(--fg); font-weight: 700; }
-  h1, h2 { text-wrap: balance; }
-  h3 { text-wrap: pretty; }
+  /* Balance only the H1: balancing every heading measured ~60 ms extra layout per navigation at 4× CPU. */
+  h1 { text-wrap: balance; }
   h1 { font-size: clamp(2rem, 1.45rem + 2.3vw, 3rem); line-height: 1.08; letter-spacing: -0.035em; margin: 8px 0 10px; }
   h2 { font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.7rem); line-height: 1.2; letter-spacing: -0.025em; margin: 0 0 14px; font-weight: 650; }
   h3 { font-size: 1.125rem; line-height: 1.35; letter-spacing: -0.01em; margin: 22px 0 6px; font-weight: 620; }
@@ -113,7 +113,8 @@
 .icon { flex: none; display: inline-block; vertical-align: middle; }
 
 /* ---------- Header: translucent, sticky on desktop; one swipeable nav row on phones ---------- */
-.site-header { position: relative; z-index: 30; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 82%, transparent); -webkit-backdrop-filter: saturate(160%) blur(14px); backdrop-filter: saturate(160%) blur(14px); }
+/* Solid, not backdrop-blurred: the blur repainted on every scroll frame and navigation (measured, 2026-10-11). */
+.site-header { position: relative; z-index: 30; border-bottom: 1px solid var(--line); background: var(--bg); }
 @media (min-width: 721px) { .site-header { position: sticky; top: 0; } }
 .site-header .bar { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: var(--header-h); }
 .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--fg); text-decoration: none; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.02em; padding: 10px 0; }
@@ -122,6 +123,8 @@
 .nav a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; border-radius: 999px; color: var(--fg-2); text-decoration: none; font-size: 0.925rem; font-weight: 500; white-space: nowrap; transition: background-color 0.18s var(--ease), color 0.18s var(--ease); }
 .nav a:hover { background: var(--surface-2); color: var(--fg); }
 .nav a.nav-all { color: var(--brand); }
+.nav a[aria-current] { background: var(--brand-soft); color: var(--brand-strong); font-weight: 600; }
+.nav a[aria-current]:hover { background: var(--brand-soft); color: var(--brand-strong); }
 @media (max-width: 720px) {
   .site-header .bar { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 0; min-height: 0; }
   .logo { padding: 12px 0 4px; }
@@ -269,10 +272,25 @@ table.data td.num { white-space: nowrap; }
 @media (max-width: 480px) { table.data th, table.data td { padding: 8px 9px; font-size: 0.85rem; } }
 .table-note { font-size: 0.875rem; color: var(--muted); margin: 0 0 1em; }
 
-/* FAQ: every answer visible under its own question heading (docs/05 §5) */
+/*
+ * FAQ accordion: native <details>/<summary> (keyboard, focus and expanded state built in, no JS). Answers stay in
+ * the HTML, so Google and AI crawlers read them (docs/05 §5); the first one is open. Height animates where the
+ * browser supports ::details-content + interpolate-size, and simply toggles elsewhere.
+ */
+.faq { border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-xs); overflow: clip; }
+.faq-item { interpolate-size: allow-keywords; }
 .faq-item + .faq-item { border-top: 1px solid var(--line); }
-.faq-item h3 { margin: 18px 0 6px; }
-.faq-item p { margin: 0 0 18px; }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; cursor: pointer; list-style: none; transition: background-color 0.15s; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { background: var(--surface-2); }
+.faq-item summary:focus-visible { outline-offset: -2px; border-radius: 0; }
+.faq-item summary h3 { margin: 0; font-size: 1.05rem; line-height: 1.4; color: var(--fg); }
+.faq-item .faq-toggle { display: grid; place-items: center; flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--surface-2); color: var(--muted); transition: transform 0.25s var(--ease), background-color 0.15s, color 0.15s; }
+.faq-item[open] .faq-toggle { transform: rotate(45deg); background: var(--brand-soft); color: var(--brand-strong); }
+.faq-item .faq-a { padding: 0 20px 18px; color: var(--fg-2); }
+.faq-item .faq-a p { margin: 0; }
+.faq-item::details-content { block-size: 0; overflow-y: clip; transition: block-size 0.28s var(--ease), content-visibility 0.28s allow-discrete; }
+.faq-item[open]::details-content { block-size: auto; }
 
 /* Trust footer with the author's monogram */
 .trust p, .trust ul { font-size: 0.95rem; }
@@ -354,6 +372,16 @@ table.data td.num { white-space: nowrap; }
 .ad-slot--inline { --ad-h: 280px; }
 .ad-slot--rail { --ad-h: 600px; margin: 0; }
 @media (max-width: 1099px) { .ad-slot--rail { display: none; } }
+
+/* ---------- Navigation feedback: shown the instant an internal link is clicked (components/NavLinks.tsx) ---------- */
+html[data-nav] body::before { content: ''; position: fixed; inset: 0 0 auto; z-index: 100; height: 3px; background: var(--grad); transform-origin: 0 50%; animation: nav-progress 2.4s cubic-bezier(0.1, 0.7, 0.1, 1) forwards; }
+html[data-nav] main { opacity: 0.6; transition: opacity 0.2s ease 0.12s; }
+@keyframes nav-progress { from { transform: scaleX(0.05); } to { transform: scaleX(0.9); } }
+
+/*
+ * No content-visibility: it was tried for off-screen blocks and measured MORE layout on client navigations
+ * (≈350 → 180 ms without it, 4× CPU), and it breaks "On this page" #anchor positions.
+ */
 
 /* ---------- Motion: compositor-only, never hides content, off for reduced motion ---------- */
 @keyframes rise { from { transform: translateY(18px) scale(0.985); } to { transform: none; } }

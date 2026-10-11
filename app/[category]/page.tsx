@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import Icon, { categoryIcon } from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import ToolList from '@/components/ToolList';
-import { categoryPath, publishedCategories, publishedInstances } from '@/content/registry';
+import { categoryMeta, categoryPath, publishedCategories, publishedInstances } from '@/content/registry';
 import { categoryBySlug } from '@/content/taxonomy';
 import { crumbsForCategory, popularIn, toolsBySubcategory } from '@/lib/links';
 import { anchorId } from '@/lib/format';
@@ -22,7 +22,7 @@ type Props = { params: Promise<{ category: string }> };
 
 export async function generateMetadata({ params }: Props) {
   const c = categoryBySlug((await params).category);
-  return c ? pageMetadata({ title: c.title, description: c.description, path: categoryPath(c) }) : {};
+  return c ? pageMetadata({ ...categoryMeta(c), path: categoryPath(c) }) : {};
 }
 
 /** Category page (Omni pattern): intro, every tool under its subcategory heading, popular, other categories. */
@@ -35,7 +35,7 @@ export default async function CategoryPage({ params }: Props) {
   const answers = publishedInstances.filter((i) => i.parent.category.slug === c.slug);
   return (
     <>
-      <JsonLd data={collectionGraph({ path: categoryPath(c), name: c.title, description: c.description, crumbs: crumbsForCategory(c), items: all })} />
+      <JsonLd data={collectionGraph({ path: categoryPath(c), name: categoryMeta(c).title, description: categoryMeta(c).description, crumbs: crumbsForCategory(c), items: all })} />
       <Breadcrumbs crumbs={crumbsForCategory(c)} />
       <div className="title-row">
         <span className="icon-tile lg">

@@ -25,7 +25,7 @@ export default function explain(): Explain {
     example: `Worked example: a mating on ${longDate(mating)} gives an estimated due date of ${longDate(addDaysIso(mating, METHODS.mating.due))}, with a normal window from ${longDate(addDaysIso(mating, METHODS.mating.early))} to ${longDate(addDaysIso(mating, METHODS.mating.late))}. The range is wide because sperm can survive for several days before ovulation, so the mating date isn't the conception date.`,
     tables: [
       { caption: 'Dog pregnancy week by week', columns: ['Week', 'Days', 'What happens'], rows: weeks },
-      { caption: 'Key dates from a 1 March 2026 mating', columns: ['Milestone', 'Date'], rows: [...MILESTONES.map((m) => [m.label, longDate(addDaysIso(mating, m.day))]), [`Estimated due date (day ${METHODS.mating.due})`, longDate(addDaysIso(mating, METHODS.mating.due))]] },
+      { caption: 'Dog pregnancy calendar from a March 1, 2026 mating', columns: ['Milestone', 'Date'], rows: [...MILESTONES.map((m) => [m.label, longDate(addDaysIso(mating, m.day))]), [`Estimated due date (day ${METHODS.mating.due})`, longDate(addDaysIso(mating, METHODS.mating.due))]] },
     ],
     assumptions: [
       'This is an educational estimate, not veterinary advice. Involve your vet for prenatal care, and call them immediately if labor problems occur.',

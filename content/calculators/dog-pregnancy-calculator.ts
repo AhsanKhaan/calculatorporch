@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'dog-pregnancy',
   name: 'Dog Pregnancy Calculator',
   title: 'Dog Pregnancy Calculator: Due Date and Timeline',
-  description: 'Estimate a dog’s due date and whelping window from the mating, ovulation or LH-surge date, with a week-by-week pregnancy timeline and key milestones.',
+  description: 'Dog pregnancy calculator: estimate the due date and whelping window from the mating, ovulation or LH-surge date, with a week-by-week calendar.',
   h1: 'Dog Pregnancy Calculator',
   directAnswer:
     'Dogs are pregnant for about 63 days, roughly nine weeks. Counted from a single mating, a normal range is about 56 to 68 days, because the mating date isn’t the conception date. A mating on March 1, 2026 points to a due date around May 3, 2026. Enter your dates for a full week-by-week timeline.',

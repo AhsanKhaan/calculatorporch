@@ -92,3 +92,24 @@ export const TRUST_PAGES = [
 ] as const;
 
 export const AUTHOR = { slug: 'ahsan-khan', path: '/authors/ahsan-khan/' } as const;
+
+/**
+ * Category <title> and meta description that never promise tools that aren't live (also used by llms.txt).
+ * The curated copy in taxonomy.ts describes the whole planned category (e.g. "LCM, volume and right triangles"), so
+ * it's used only once every planned calculator in that category is published. Until then both are generated from
+ * the published tools, which keeps them accurate as the site grows.
+ */
+export function categoryMeta(c: Category): { title: string; description: string } {
+  const planned = REGISTRY.filter((r) => r.type === 'calculator' && r.category === c.slug && r.status !== 'skip-vendor-serp' && r.adsense === 'green');
+  const live = publishedTools.filter((t) => t.category.slug === c.slug).sort((a, b) => demand(b) - demand(a));
+  if (planned.every((r) => live.some((t) => t.url === r.url))) return { title: c.title, description: c.description };
+  const head = c.title.split(':')[0]!.trim(); // "Math Calculators"
+  const list = (names: string[]) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`);
+  let names = live.map((t) => t.name);
+  let description = `Free ${head.toLowerCase()} that show the formula and a worked example: ${list(names)}.`;
+  while (description.length > 155 && names.length > 1) {
+    names = names.slice(0, -1);
+    description = `Free ${head.toLowerCase()} that show the formula and a worked example, including the ${list(names)}.`;
+  }
+  return { title: `${head} With Formulas and Steps`, description };
+}

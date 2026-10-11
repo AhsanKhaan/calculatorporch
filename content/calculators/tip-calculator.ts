@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'tip',
   name: 'Tip Calculator',
   title: 'Tip Calculator: Tip, Total and Split the Bill',
-  description: 'Calculate the tip and total for any bill and tip percentage, split it between any number of people, and round each share up to a whole dollar.',
+  description: 'Tip calculator and gratuity calculator: work out the tip and total for any bill, split it between people and round each share up to a whole dollar.',
   h1: 'Tip Calculator',
   directAnswer:
     'To calculate a tip, multiply the bill by the tip percentage. An 18% tip on a $64 bill is $11.52, making the total $75.52, or $37.76 each when two people split it. Choose to round each share up and the calculator shows the exact tip percentage that results.',

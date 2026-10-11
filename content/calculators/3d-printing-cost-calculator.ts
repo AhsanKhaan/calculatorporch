@@ -6,7 +6,7 @@ const tool: ToolInput = {
   calculator: '3d-printing-cost',
   name: '3D Printing Cost Calculator',
   title: '3D Printing Cost Calculator: Price Your Prints for Profit',
-  description: 'Find what a 3D print really costs (filament, power, wear, failed prints, your time) and the price that keeps your margin after Etsy or eBay fees.',
+  description: '3D printing cost calculator: what a print really costs (filament, power, wear, failed prints, your time) and a price that keeps your margin after fees.',
   h1: '3D Printing Cost Calculator',
   directAnswer:
     '3D print cost = filament + electricity + machine wear + a failed-print allowance + your time + packaging. A 120 g PLA print that runs 6 hours costs about $10.85. To keep a 40% margin after Etsy-style fees, sell it for about $22.37. Change any input and every number updates.',

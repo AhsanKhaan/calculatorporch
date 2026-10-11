@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'square-footage',
   name: 'Square Footage Calculator',
   title: 'Square Footage Calculator: Rooms, Circles, Triangles',
-  description: 'Calculate square feet for rectangles, circles and triangles, convert to square yards, square meters and acres, and estimate cost per square foot.',
+  description: 'Square footage calculator: find square feet for rectangles, circles and triangles, convert to square yards, square meters and acres, and estimate cost.',
   h1: 'Square Footage Calculator',
   directAnswer:
     'To calculate square feet, multiply length by width in feet. A 12 ft by 15 ft room is 180 square feet, which is 20 square yards or 16.72 square meters. For circles use π × radius², and for triangles base × height ÷ 2. Split L-shaped rooms into rectangles and add them.',

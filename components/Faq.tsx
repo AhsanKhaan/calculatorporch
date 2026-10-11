@@ -1,19 +1,32 @@
+import Icon from '@/components/Icon';
 import type { Faq as FaqItem } from '@/content/schema';
 
 /**
- * Visible FAQ: each question is an H3 with its answer always shown, so every Q&A is a self-contained passage that
- * readers, Google and AI answers can quote (docs/05 §5). The same strings feed FAQPage JSON-LD, so the text always matches.
+ * FAQ accordion built on native <details>/<summary>: keyboard (Enter/Space), focus and the expanded state are
+ * exposed by the browser, with no JavaScript. Each question stays an H3 (allowed inside <summary>) so the page
+ * outline and passage structure are unchanged (docs/05 §5). Answers are always in the HTML (closed <details>
+ * content is still indexed and found by find-in-page). The first item starts open.
+ * The same strings feed the FAQPage JSON-LD (lib/seo/jsonld.ts), so the markup and schema always match.
  */
 export default function Faq({ faqs, heading = 'Frequently asked questions', id = 'faq' }: { faqs: readonly FaqItem[]; heading?: string; id?: string }) {
   return (
     <section aria-labelledby={id}>
       <h2 id={id}>{heading}</h2>
-      {faqs.map((f) => (
-        <div className="faq-item" key={f.q}>
-          <h3>{f.q}</h3>
-          <p>{f.a}</p>
-        </div>
-      ))}
+      <div className="faq">
+        {faqs.map((f, n) => (
+          <details className="faq-item" key={f.q} open={n === 0}>
+            <summary>
+              <h3>{f.q}</h3>
+              <span className="faq-toggle" aria-hidden="true">
+                <Icon name="plus" size={16} />
+              </span>
+            </summary>
+            <div className="faq-a">
+              <p>{f.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
     </section>
   );
 }

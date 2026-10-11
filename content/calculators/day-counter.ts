@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'day-counter',
   name: 'Day Counter',
   title: 'Day Counter: Count Days Between Two Dates',
-  description: 'Count the days between two dates, including or excluding the end date, with the total in weeks, weekdays and weekend days. Leap years handled.',
+  description: 'Day counter: count the days between two dates, with or without the end date, in days, weeks, weekdays and weekend days. Leap years handled.',
   h1: 'Day Counter',
   directAnswer:
     'To count the days between two dates, subtract the start date from the end date; add one if you count the end day too. January 1 to December 31, 2026, counting both dates, is 365 days: 52 weeks and 1 day. This day counter also splits the total into weekdays and weekends.',

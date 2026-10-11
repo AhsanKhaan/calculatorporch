@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import NavLinks from '@/components/NavLinks';
 import { SITE } from '@/content/site';
 import { categoryPath, publishedCategories } from '@/content/registry';
 
-/** Translucent header: logo mark + category nav (sticky on desktop, one swipeable row on phones). Server-rendered. */
+/** Header: logo mark + category nav with the active page marked (sticky on desktop, one swipeable row on phones). */
 export default function SiteHeader() {
+  const links = [
+    ...publishedCategories.map((c) => ({ href: categoryPath(c), label: c.name })),
+    { href: '/calculators/', label: 'All calculators', className: 'nav-all' },
+  ];
   return (
     <header className="site-header">
       <div className="wrap bar">
@@ -14,16 +19,7 @@ export default function SiteHeader() {
           </span>
           {SITE.name}
         </Link>
-        <nav aria-label="Categories" className="nav">
-          {publishedCategories.map((c) => (
-            <Link key={c.slug} href={categoryPath(c)}>
-              {c.name}
-            </Link>
-          ))}
-          <Link href="/calculators/" className="nav-all">
-            All calculators
-          </Link>
-        </nav>
+        <NavLinks links={links} />
       </div>
     </header>
   );

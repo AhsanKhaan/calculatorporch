@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'percent-off',
   name: 'Percent Off Calculator',
   title: 'Percent Off Calculator: Sale Price and Savings',
-  description: 'Work out the sale price and how much you save at any percent off, with optional sales tax, plus a table of common discounts on everyday prices.',
+  description: 'Percent off calculator: find the sale price and how much you save at any discount, with optional sales tax and a table of common discounts.',
   h1: 'Percent Off Calculator',
   directAnswer:
     'To calculate a percent off, multiply the price by the discount to get your savings, then subtract it from the price. 40% off $60 saves $24.00, so you pay $36.00, which is 60% of the original price. Add your sales tax rate to see the total at the register.',

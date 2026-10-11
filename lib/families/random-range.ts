@@ -14,9 +14,9 @@ const randomRangeFamily: Family = {
     const size = hi - lo + 1;
     return {
       slug,
-      name: `Random Number ${lo} to ${hi}`,
+      name: `Random Number Generator ${lo} to ${hi}`,
       title: `Random Number Generator ${lo} to ${hi}`,
-      description: `Pick a random number from ${lo} to ${hi}, one or several, with or without repeats. Each number has a 1 in ${size} chance; see the odds for repeated picks.`,
+      description: `Random number generator for ${lo} to ${hi}: pick one number or several, with or without repeats. Each has a 1 in ${size} chance; see the odds of repeats.`,
       h1: `Random Number Generator ${lo} to ${hi}`,
       directAnswer: `Press Generate to pick a random whole number from ${lo} to ${hi}. Each of the ${size} numbers has an equal 1 in ${size} chance (${pct(1 / size)}) on every pick. Choose "no repeats" to draw several different numbers, for example to order ${size} teams or players fairly.`,
       answer: { label: `Chance of each number from ${lo} to ${hi}`, value: `1 in ${size} (${pct(1 / size)})` },

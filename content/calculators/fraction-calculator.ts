@@ -5,7 +5,7 @@ const tool: ToolInput = {
   calculator: 'fraction',
   name: 'Fraction Calculator',
   title: 'Fraction Calculator: Add, Subtract, Multiply, Divide',
-  description: 'Add, subtract, multiply and divide fractions and mixed numbers, with every step shown and the answer in simplest form, as a mixed number and a decimal.',
+  description: 'Free fraction calculator: add, subtract, multiply and divide fractions and mixed numbers, with every step shown and the answer in simplest form.',
   h1: 'Fraction Calculator',
   directAnswer:
     'To multiply fractions, multiply the numerators and the denominators, then simplify: 2/3 × 2/3 = 4/9. To add or subtract, rewrite both over a common denominator first. This fraction calculator does all four operations with mixed numbers too, and shows every step and the decimal answer.',

@@ -1,17 +1,24 @@
 import { operate, parseFraction, toDecimal, toFractionString, toMixed, type Op, OP_WORD } from '@/lib/calculators/fraction';
 import type { Family } from './types';
 
-/** Wave-1 instances: only expressions with research evidence (docs/11 §1, gated by demand). */
-const EXPRESSIONS: Record<string, { a: string; op: Op; b: string } | { convert: string }> = {
-  '2-3-times-2-3': { a: '2/3', op: '×', b: '2/3' },
+/**
+ * Wave-1 instances: only expressions with research evidence (docs/11 §1, gated by demand).
+ * `phrase` copies the wording of the researched query (keyword-map `primary`) into the name, H1, title and
+ * description, e.g. "2/3 times 2/3 in fraction form", so the page matches how people actually search.
+ */
+const EXPRESSIONS: Record<string, { a: string; op: Op; b: string; phrase?: string } | { convert: string }> = {
+  '2-3-times-2-3': { a: '2/3', op: '×', b: '2/3', phrase: 'in fraction form' },
   '3-1-3-divided-by-4': { a: '3 1/3', op: '÷', b: '4' },
-  '2-1-3-minus-2-3': { a: '2 1/3', op: '-', b: '2/3' },
+  '2-1-3-minus-2-3': { a: '2 1/3', op: '-', b: '2/3', phrase: 'as a fraction' },
   '2-1-3-times-2': { a: '2 1/3', op: '×', b: '2' },
   '1-1-2-times-1-4': { a: '1 1/2', op: '×', b: '1/4' },
   '2-3-in-fraction-form': { convert: '2/3' },
 };
 
 const SYM: Record<Op, string> = { '+': '+', '-': '−', '×': '×', '÷': '÷' };
+const SMALL_WORDS = new Set(['a', 'an', 'as', 'in', 'of', 'to']);
+/** "as a fraction" → "as a Fraction", matching the site's title style ("Answer as a Fraction"). */
+const titleCase = (s: string) => s.split(' ').map((w) => (SMALL_WORDS.has(w) ? w : `${w[0]!.toUpperCase()}${w.slice(1)}`)).join(' ');
 const answerText = (a: string, op: Op, b: string) => {
   const r = operate(parseFraction(a)!, op, parseFraction(b)!, a, b);
   return r.result ? toMixed(r.result) : 'undefined';
@@ -52,7 +59,7 @@ const fractionFamily: Family = {
       };
     }
 
-    const { a, op, b } = def;
+    const { a, op, b, phrase } = def;
     const r = operate(parseFraction(a)!, op, parseFraction(b)!, a, b);
     const res = r.result!;
     const simple = toFractionString(res);
@@ -64,10 +71,14 @@ const fractionFamily: Family = {
     const neighbours = (op === '÷' || op === '×' ? ['1/2', '2', '3', '4', '5'] : ['1/3', '1/2', '1', '1 1/2', '2']).filter((x) => x !== b);
     return {
       slug,
-      name: `${a} ${word} ${b}`,
-      title: `${a} ${word[0]!.toUpperCase()}${word.slice(1)} ${b}: Answer as a Fraction`,
-      description: `${expr} = ${simple}${mixed !== simple ? ` (${mixed})` : ''}. See the step-by-step working, the decimal (${dec.toFixed(4)}) and similar fraction problems.`,
-      h1: `${a} ${word} ${b}`,
+      name: `${a} ${word} ${b}${phrase ? ` ${phrase}` : ''}`,
+      title: phrase
+        ? `${a} ${word[0]!.toUpperCase()}${word.slice(1)} ${b} ${titleCase(phrase)}: Answer and Steps`
+        : `${a} ${word[0]!.toUpperCase()}${word.slice(1)} ${b}: Answer as a Fraction`,
+      description: phrase
+        ? `${a} ${word} ${b} ${phrase} is ${simple}${mixed !== simple ? ` (${mixed})` : ''}. See the step-by-step working, the decimal (${dec.toFixed(4)}) and similar problems.`
+        : `${expr} = ${simple}${mixed !== simple ? ` (${mixed})` : ''}. See the step-by-step working, the decimal (${dec.toFixed(4)}) and similar fraction problems.`,
+      h1: `${a} ${word} ${b}${phrase ? ` ${phrase}` : ''}`,
       directAnswer: `${a} ${word} ${b} equals ${simple}${mixed !== simple ? `, or ${mixed} as a mixed number` : ''}, which is ${dec.toFixed(4)} as a decimal. ${op === '×' ? 'To multiply fractions, multiply the numerators and the denominators' : op === '÷' ? 'To divide by a fraction or whole number, multiply by its reciprocal' : 'To subtract or add fractions, rewrite them over a common denominator'}, then simplify. The working below shows each step. As a percentage that is ${(dec * 100).toFixed(2)}%. Change either number in the calculator below to solve a similar problem.`,
       answer: { label: `${expr} =`, value: mixed !== simple ? `${simple} = ${mixed}` : simple },
       steps: r.steps,
