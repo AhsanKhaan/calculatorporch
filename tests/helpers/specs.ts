@@ -8,6 +8,7 @@ import fraction from '@/lib/calculators/fraction.spec';
 import gravel from '@/lib/calculators/gravel.spec';
 import percentOff from '@/lib/calculators/percent-off.spec';
 import random from '@/lib/calculators/random-number.spec';
+import solar from '@/lib/calculators/solar-panel.spec';
 import sqft from '@/lib/calculators/square-footage.spec';
 import sd from '@/lib/calculators/standard-deviation.spec';
 import tip from '@/lib/calculators/tip.spec';
@@ -21,6 +22,7 @@ const specs: Readonly<Record<string, CalculatorSpec>> = {
   gravel,
   'percent-off': percentOff,
   'random-number': random,
+  'solar-panel': solar,
   'square-footage': sqft,
   'standard-deviation': sd,
   tip,

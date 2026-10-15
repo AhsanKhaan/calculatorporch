@@ -7,6 +7,7 @@ import fraction from './fraction-calculator';
 import gravel from './gravel-calculator';
 import percentOff from './percent-off-calculator';
 import randomNumber from './random-number-generator';
+import solarPanel from './solar-panel-calculator';
 import squareFootage from './square-footage-calculator';
 import standardDeviation from './standard-deviation-calculator';
 import tip from './tip-calculator';
@@ -22,4 +23,5 @@ export const TOOL_CONTENT: readonly ToolInput[] = [
   gravel,
   dogPregnancy,
   printCost,
+  solarPanel,
 ];

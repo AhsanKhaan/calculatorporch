@@ -3,7 +3,7 @@
  * A category is generated only once it has a published page (playbook §0.2b: no empty hubs).
  */
 export const CATEGORY_SLUGS = [
-  'math', 'statistics', 'everyday-life', 'construction', 'finance', 'food', 'pets', 'sports', 'physics', 'education',
+  'math', 'statistics', 'everyday-life', 'construction', 'finance', 'energy', 'food', 'pets', 'sports', 'physics', 'education',
   'health', 'conversion', 'garden', 'photo', 'auto', 'other',
 ] as const;
 export type CategorySlug = (typeof CATEGORY_SLUGS)[number];
@@ -54,12 +54,12 @@ export const CATEGORIES: readonly Category[] = [
     slug: 'everyday-life',
     name: 'Everyday Life',
     title: 'Everyday Calculators: Time, Dates, Age and Home',
-    description: 'Free everyday calculators: time between times, days between dates, age, hours from now, electricity cost, crafts and event planning.',
+    description: 'Free everyday calculators: time between times, days between dates, age, hours from now, crafts, sewing and event planning.',
     intro:
-      'Calculators for everyday questions: how long between two times, how many days until a date, exactly how old someone is, and what time it will be a number of hours from now. You will also find tools for running costs at home, using official electricity prices by US state, and for craft projects like candle making and sewing, plus a seating chart maker for weddings and events. Each one shows how the answer is worked out, so you can trust it and explain it.',
+      'Calculators for everyday questions: how long between two times, how many days until a date, exactly how old someone is, and what time it will be a number of hours from now. You will also find tools for craft projects like candle making and sewing, plus a seating chart maker for weddings and events. Each one shows how the answer is worked out, so you can trust it and explain it.',
     introLive:
       "Calculators for everyday date questions. The day counter works out how many days fall between two dates, with or without the end date, and splits the total into weeks, weekdays and weekend days, handling leap years automatically. It also answers quick questions such as what the date will be 10 days from today. Each result shows how it was worked out, so you can trust it and explain it, and nothing you type leaves your browser.",
-    subcategories: ['Time & date', 'Home & energy', 'Crafts & sewing', 'Events'],
+    subcategories: ['Time & date', 'Crafts & sewing', 'Events'],
   },
   {
     slug: 'construction',
@@ -82,6 +82,17 @@ export const CATEGORIES: readonly Category[] = [
     introLive:
       "Everyday money calculators that do the arithmetic for you. Work out a sale price and how much you save at any percent off, with optional sales tax; calculate a tip, split the bill and round each share up; and price 3D prints so each sale covers filament, electricity, machine wear, failed prints, your time and marketplace fees. These tools do maths, not financial advice: each one shows its formula and a worked example so you can check the numbers yourself.",
     subcategories: ['Shopping & discounts', 'Pricing & business'],
+  },
+  {
+    slug: 'energy',
+    name: 'Energy & Solar',
+    title: 'Energy Calculators: Solar Panels, Batteries, Power',
+    description: 'Free energy calculators: solar system size and panel count, battery banks, RV solar and electricity cost, using NASA sun data and EIA prices.',
+    intro:
+      "Energy calculators for homes, cabins and RVs. Size a rooftop solar system and count the panels you need from your monthly use, with NASA sun-hour averages for every US state and major Pakistani cities. Plan a battery bank for backup or off-grid power, size solar for an RV, and work out what electricity costs using official US prices by state. Each tool shows its formula, its data source and a worked example, so you can check an installer's numbers before you buy.",
+    introLive:
+      'Energy calculators for homes planning solar. The solar panel calculator turns your monthly electricity use into a system size in kW and a panel count, using NASA sun-hour averages for every US state and 13 Pakistani cities, then estimates yearly output, the weakest month, roof area, savings and payback. Savings use official EIA prices in the US, or your own price per unit, with net-billing settings for Pakistan. Every step of the working is shown.',
+    subcategories: ['Solar', 'Batteries & backup', 'Electricity & bills'],
   },
   {
     slug: 'food',

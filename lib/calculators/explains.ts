@@ -8,6 +8,7 @@ import explainGravel from './gravel.explain';
 import explainPercentOff from './percent-off.explain';
 import explainRandom from './random-number.explain';
 import explainSqft from './square-footage.explain';
+import explainSolar from './solar-panel.explain';
 import explainSd from './standard-deviation.explain';
 import explainTip from './tip.explain';
 
@@ -22,4 +23,5 @@ export const EXPLAINS: Readonly<Record<string, () => Explain>> = {
   'square-footage': explainSqft,
   gravel: explainGravel,
   'dog-pregnancy': explainDog,
+  'solar-panel': explainSolar,
 };

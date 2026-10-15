@@ -1,21 +1,103 @@
 'use client';
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import type { CalculatorSpec, ComputeResult, Field } from '@/lib/engine/spec';
+import type { CalculatorSpec, ComputeResult, Field, NumberField } from '@/lib/engine/spec';
 import { applyChange, defaultState, parseAll, queryFromState, stateFromQuery, type RawState } from '@/lib/engine/parse';
 import { formatOutput, localTodayIso } from '@/lib/engine/format';
+import { stepValue } from '@/lib/engine/step';
 import { toCsv } from '@/lib/csv';
 
-function FieldInput({ f, value, invalid, onChange }: { f: Field; value: string; invalid: boolean; onChange: (k: string, v: string) => void }) {
+/** Field shown now? (showWhen: another field's raw value must be one of the listed values.) */
+const isShown = (f: Field, state: RawState): boolean => !f.showWhen || f.showWhen.in.includes(state[f.showWhen.key] ?? '');
+
+type OnChange = (k: string, v: string) => void;
+
+function NumberInput({ f, value, common, onChange }: { f: NumberField; value: string; common: Record<string, unknown>; onChange: OnChange }) {
+  const input = <input {...common} type="number" inputMode="decimal" min={f.min} max={f.max} step={f.step} value={value} onChange={(e) => onChange(f.key, e.target.value)} />;
+  if (f.display !== 'stepper') return input;
+  const n = Number(value);
+  return (
+    <div className="stepper">
+      <button type="button" aria-label={`Decrease ${f.label}`} disabled={Number.isFinite(n) && n <= f.min} onClick={() => onChange(f.key, stepValue(f, value, -1))}>
+        −
+      </button>
+      {input}
+      <button type="button" aria-label={`Increase ${f.label}`} disabled={Number.isFinite(n) && n >= f.max} onClick={() => onChange(f.key, stepValue(f, value, 1))}>
+        +
+      </button>
+    </div>
+  );
+}
+
+/** A small inline number input that belongs to another field's cell (e.g. "6 h a day" beside a quantity). */
+function CompanionInput({ f, value, invalid, onChange }: { f: NumberField; value: string; invalid: boolean; onChange: OnChange }) {
+  const id = useId();
+  return (
+    <div className="companion">
+      <input
+        id={id}
+        name={f.key}
+        className="mini"
+        type="number"
+        inputMode="decimal"
+        min={f.min}
+        max={f.max}
+        step={f.step}
+        value={value}
+        aria-invalid={invalid || undefined}
+        aria-label={f.label}
+        onChange={(e) => onChange(f.key, e.target.value)}
+      />
+      <span aria-hidden="true">{f.suffix ?? ''}</span>
+    </div>
+  );
+}
+
+function FieldInput({
+  f,
+  value,
+  invalid,
+  onChange,
+  companion,
+}: {
+  f: Field;
+  value: string;
+  invalid: boolean;
+  onChange: OnChange;
+  companion?: { f: NumberField; value: string; invalid: boolean };
+}) {
   const id = useId();
   const hintId = f.hint ? `${id}-hint` : undefined;
   const common = { id, name: f.key, 'aria-invalid': invalid || undefined, 'aria-describedby': hintId } as const;
+  const hint = f.hint ? (
+    <p className="hint" id={hintId}>
+      {f.hint}
+    </p>
+  ) : null;
+
+  if (f.type === 'select' && f.display === 'tabs') {
+    return (
+      <div className="span2">
+        <p className="label" id={`${id}-label`}>
+          {f.label}
+        </p>
+        <div className="seg" role="radiogroup" aria-labelledby={`${id}-label`} aria-describedby={hintId}>
+          {f.options.map((o) => (
+            <label key={o.value} className={o.value === value ? 'on' : undefined}>
+              <input type="radio" name={f.key} value={o.value} checked={o.value === value} onChange={() => onChange(f.key, o.value)} />
+              {o.label}
+            </label>
+          ))}
+        </div>
+        {hint}
+      </div>
+    );
+  }
+
   let control: React.ReactNode;
   switch (f.type) {
     case 'number':
-      control = (
-        <input {...common} type="number" inputMode="decimal" min={f.min} max={f.max} step={f.step} value={value} onChange={(e) => onChange(f.key, e.target.value)} />
-      );
+      control = <NumberInput f={f} value={value} common={common} onChange={onChange} />;
       break;
     case 'select':
       control = (
@@ -40,15 +122,14 @@ function FieldInput({ f, value, invalid, onChange }: { f: Field; value: string; 
       control = <textarea {...common} rows={3} value={value} onChange={(e) => onChange(f.key, e.target.value)} />;
       break;
   }
+  const isStepper = f.type === 'number' && f.display === 'stepper';
   return (
-    <div className={f.type === 'numberList' ? 'span2' : undefined}>
+    <div className={f.type === 'numberList' ? 'span2' : isStepper ? 'stepper-field' : undefined}>
       <label htmlFor={id}>{f.label}</label>
+      {isStepper ? hint : null}
       {control}
-      {f.hint ? (
-        <p className="hint" id={hintId}>
-          {f.hint}
-        </p>
-      ) : null}
+      {companion ? <CompanionInput {...companion} onChange={onChange} /> : null}
+      {isStepper ? null : hint}
     </div>
   );
 }
@@ -56,7 +137,8 @@ function FieldInput({ f, value, invalid, onChange }: { f: Field; value: string; 
 /**
  * The one calculator island. `buildToday` is the build date so the static HTML and first client render match;
  * after hydration the visitor's local date and any shared-link values are applied. The URL is never written
- * while typing (SEC-CODE-09).
+ * while typing (SEC-CODE-09). Optional per spec: a step-by-step wizard (spec.steps), tabs, −/+ steppers, fields
+ * shown only in one mode (showWhen) and group totals. The result panel stays visible on every step.
  */
 export default function CalculatorEngine({
   spec,
@@ -78,6 +160,11 @@ export default function CalculatorEngine({
   const [bump, setBump] = useState(0);
   // Once the visitor edits anything, the first-load sync must never overwrite it.
   const touched = useRef(false);
+  // Wizard (spec.steps): the current step is UI state only; it's never put in the URL.
+  const [step, setStep] = useState(0);
+  const stepHeading = useRef<HTMLParagraphElement>(null);
+  const resultRef = useRef<HTMLElement>(null);
+  const moved = useRef(false);
 
   useEffect(() => {
     const local = localTodayIso();
@@ -88,6 +175,11 @@ export default function CalculatorEngine({
     // `start` depends only on props that are stable for the page's lifetime.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [spec]);
+
+  // Move keyboard and screen-reader focus to the new step's heading (never on first render).
+  useEffect(() => {
+    if (moved.current) stepHeading.current?.focus();
+  }, [step]);
 
   const { values, invalid } = useMemo(() => parseAll(spec, state, today), [spec, state, today]);
   const computed = useMemo(() => spec.compute(values, { today }), [spec, values, today]);
@@ -103,6 +195,31 @@ export default function CalculatorEngine({
   };
 
   const groups = [...new Set(spec.fields.map((f) => f.group ?? ''))];
+  const companions = new Map<string, NumberField>();
+  for (const f of spec.fields) {
+    if (f.type !== 'number' || !f.companion) continue;
+    const c = spec.fields.find((x): x is NumberField => x.key === f.companion && x.type === 'number');
+    if (c) companions.set(f.key, c);
+  }
+  const companionKeys = new Set([...companions.values()].map((c) => c.key));
+  const steps = spec.steps?.length ? spec.steps : null;
+  const stepIndex = steps ? Math.min(step, steps.length - 1) : 0;
+  const current = steps ? steps[stepIndex] : undefined;
+  const shownGroups = current ? groups.filter((g) => current.groups.includes(g)) : groups;
+  const totalFor = (g: string): string | null => {
+    const key = spec.groupTotals?.[g];
+    const def = key ? spec.outputs.find((o) => o.key === key) : undefined;
+    return def ? formatOutput(def, result.values[def.key]) : null;
+  };
+
+  const goTo = (i: number) => {
+    moved.current = true;
+    setStep(i);
+  };
+  const showResults = () => {
+    resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    resultRef.current?.focus({ preventScroll: true });
+  };
 
   const downloadCsv = () => {
     const csv = toCsv([
@@ -130,19 +247,66 @@ export default function CalculatorEngine({
 
   return (
     <div className="tool" data-hydrated={hydrated ? 'true' : undefined}>
-      <form className="card" aria-label="Calculator inputs" onSubmit={(e) => e.preventDefault()} noValidate>
-        {groups.map((g) => (
-          <fieldset key={g || 'main'}>
-            {g ? <legend>{g}</legend> : null}
-            <div className="grid2">
-              {spec.fields
-                .filter((f) => (f.group ?? '') === g)
-                .map((f) => (
-                  <FieldInput key={f.key} f={f} value={state[f.key] ?? ''} invalid={invalid.includes(f.key)} onChange={onChange} />
-                ))}
-            </div>
-          </fieldset>
-        ))}
+      <form className="card" aria-label="Calculator inputs" onSubmit={(e) => e.preventDefault()} noValidate data-step={steps ? stepIndex + 1 : undefined}>
+        {steps && current ? (
+          <>
+            <ol className="wizard-nav" aria-label="Calculator steps">
+              {steps.map((s, i) => (
+                <li key={s.title}>
+                  <button
+                    type="button"
+                    className={i === stepIndex ? 'on' : i < stepIndex ? 'done' : undefined}
+                    aria-current={i === stepIndex ? 'step' : undefined}
+                    onClick={() => goTo(i)}
+                  >
+                    <span className="n" aria-hidden="true">
+                      {i < stepIndex ? '✓' : i + 1}
+                    </span>
+                    <span className="t">{s.title}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+            <p className="wizard-title" ref={stepHeading} tabIndex={-1}>
+              <span>
+                Step {stepIndex + 1} of {steps.length}
+              </span>
+              {current.title}
+            </p>
+            {current.intro ? <p className="hint wizard-intro">{current.intro}</p> : null}
+          </>
+        ) : null}
+        {shownGroups.map((g) => {
+          const fields = spec.fields.filter((f) => (f.group ?? '') === g && !companionKeys.has(f.key) && isShown(f, state));
+          if (!fields.length) return null;
+          const total = totalFor(g);
+          const allSteppers = fields.every((f) => f.type === 'number' && f.display === 'stepper');
+          return (
+            <fieldset key={g || 'main'}>
+              {g ? (
+                <legend>
+                  {g}
+                  {total ? <span className="group-total">Total: {total}</span> : null}
+                </legend>
+              ) : null}
+              <div className={allSteppers ? 'grid2 stepper-grid' : 'grid2'}>
+                {fields.map((f) => {
+                  const c = companions.get(f.key);
+                  return (
+                    <FieldInput
+                      key={f.key}
+                      f={f}
+                      value={state[f.key] ?? ''}
+                      invalid={invalid.includes(f.key)}
+                      onChange={onChange}
+                      companion={c ? { f: c, value: state[c.key] ?? '', invalid: invalid.includes(c.key) } : undefined}
+                    />
+                  );
+                })}
+              </div>
+            </fieldset>
+          );
+        })}
         {spec.action ? (
           <div className="btns">
             <button type="button" className="primary" onClick={() => {
@@ -153,9 +317,27 @@ export default function CalculatorEngine({
             </button>
           </div>
         ) : null}
+        {steps ? (
+          <div className="btns wizard-actions">
+            {stepIndex > 0 ? (
+              <button type="button" onClick={() => goTo(stepIndex - 1)}>
+                Back
+              </button>
+            ) : null}
+            {stepIndex < steps.length - 1 ? (
+              <button type="button" className="primary" onClick={() => goTo(stepIndex + 1)}>
+                Next: {steps[stepIndex + 1]!.title}
+              </button>
+            ) : (
+              <button type="button" className="primary" onClick={showResults}>
+                See your results
+              </button>
+            )}
+          </div>
+        ) : null}
       </form>
 
-      <section className="card result" aria-label="Result" aria-live="polite">
+      <section className="card result" aria-label="Result" aria-live="polite" ref={resultRef} tabIndex={-1}>
         {primary ? (
           <>
             <p className="result-label">{primary.label}</p>

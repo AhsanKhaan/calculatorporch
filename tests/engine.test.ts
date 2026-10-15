@@ -3,6 +3,9 @@ import { describe, expect, test } from 'vitest';
 import type { CalculatorSpec } from '@/lib/engine/spec';
 import { applyChange, defaultState, parseAll, parseField, queryFromState, resolveDate, stateFromQuery } from '@/lib/engine/parse';
 import { formatOutput } from '@/lib/engine/format';
+import { stepValue } from '@/lib/engine/step';
+import type { NumberField } from '@/lib/engine/spec';
+import specs from './helpers/specs';
 
 const spec: CalculatorSpec = {
   id: 'test',
@@ -105,5 +108,34 @@ describe('formatOutput', () => {
     expect(formatOutput({ key: 'a', label: '', format: 'date' }, '2026-05-03')).toBe('Sunday, May 3, 2026');
     expect(formatOutput({ key: 'a', label: '', format: 'number' }, Number.NaN)).toBe('n/a');
     expect(formatOutput({ key: 'a', label: '', format: 'number' }, null)).toBe('n/a');
+  });
+});
+
+describe('engine options: steppers and wizards', () => {
+  const qty: NumberField = { key: 'q', label: 'Q', type: 'number', display: 'stepper', min: 0, max: 3, step: 1, default: 1 };
+  const hrs: NumberField = { key: 'h', label: 'H', type: 'number', min: 0, max: 24, step: 0.25, default: 6 };
+  test('stepper buttons move by step, clamp to min/max and avoid float noise', () => {
+    expect(stepValue(qty, '1', 1)).toBe('2');
+    expect(stepValue(qty, '3', 1)).toBe('3');
+    expect(stepValue(qty, '0', -1)).toBe('0');
+    expect(stepValue(qty, '', 1)).toBe('2'); // empty → from the default
+    expect(stepValue(qty, 'abc', -1)).toBe('0');
+    expect(stepValue(hrs, '0.5', 1)).toBe('0.75');
+    expect(stepValue({ ...hrs, step: 0.1 }, '0.2', 1)).toBe('0.3'); // not 0.30000000000000004
+  });
+  test.each(Object.entries(specs).filter(([, s]) => s.steps?.length))('%s: wizard steps cover every group once; showWhen, companions and totals point at real keys', (_, s) => {
+    const groups = new Set(s.fields.map((f) => f.group ?? ''));
+    const inSteps = s.steps!.flatMap((x) => x.groups);
+    expect(new Set(inSteps).size).toBe(inSteps.length);
+    expect(new Set(inSteps)).toEqual(groups);
+    const keys = new Set(s.fields.map((f) => f.key));
+    for (const f of s.fields) {
+      if (f.showWhen) expect(keys.has(f.showWhen.key), f.key).toBe(true);
+      if (f.type === 'number' && f.companion) expect(s.fields.find((c) => c.key === f.companion)?.type, f.key).toBe('number');
+    }
+    for (const [g, out] of Object.entries(s.groupTotals ?? {})) {
+      expect(groups.has(g), g).toBe(true);
+      expect(s.outputs.some((o) => o.key === out), out).toBe(true);
+    }
   });
 });

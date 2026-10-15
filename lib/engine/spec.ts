@@ -9,6 +9,8 @@ interface BaseField {
   hint?: string;
   /** Fieldset heading the field appears under. */
   group?: string;
+  /** Show the field only while another field's raw value is one of `in` (e.g. a mode chosen with tabs). Hidden fields keep their value. */
+  showWhen?: { key: string; in: readonly string[] };
 }
 export interface NumberField extends BaseField {
   type: 'number';
@@ -18,11 +20,19 @@ export interface NumberField extends BaseField {
   default: number;
   prefix?: string;
   suffix?: string;
+  /** 'stepper' adds − and + buttons (by `step`, clamped to min/max) around the input. */
+  display?: 'stepper';
+  /** Key of another number field rendered inline in this field's cell (e.g. hours a day beside a quantity). */
+  companion?: string;
+  /** Short text after the companion input, e.g. 'h a day'. */
+  companionSuffix?: string;
 }
 export interface SelectField extends BaseField {
   type: 'select';
   options: readonly { value: string; label: string }[];
   default: string;
+  /** 'tabs' renders the options as a segmented radio group instead of a dropdown. */
+  display?: 'tabs';
 }
 export interface DateField extends BaseField {
   type: 'date';
@@ -94,4 +104,12 @@ export interface CalculatorSpec {
   /** A button that produces a fresh result (e.g. a random number generator). The static HTML shows `compute()`. */
   action?: { label: string; run: (v: Values, ctx: ComputeContext) => ComputeResult };
   csvName?: string;
+  /**
+   * Optional wizard: the form is shown one step at a time, each step listing the field groups it contains, with a
+   * clickable progress bar and Back/Next. The result panel stays visible on every step (and in the static HTML).
+   * Every group must belong to exactly one step (tests/engine.test.ts).
+   */
+  steps?: readonly { title: string; intro?: string; groups: readonly string[] }[];
+  /** Group heading → output key whose formatted value is shown beside the heading (e.g. an appliance total). */
+  groupTotals?: Readonly<Record<string, string>>;
 }

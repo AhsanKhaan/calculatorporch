@@ -52,7 +52,7 @@ const tool: ToolInput = {
     'Etsy US fee preset (6.5% + 3% + $0.25 + $0.20): etsy.com/legal/fees blocks automated readers (bot check, 2026-10-11); the owner must confirm it in a browser and add it as a source',
     'Filament densities: PLA 1.24 and PETG 1.27 g/cm³ match Prusament data sheets per search summaries (not yet read first-hand); ABS 1.04, ASA 1.07, TPU 1.21 and nylon 1.14 still need a manufacturer data sheet',
   ],
-  related: ['/finance/percent-off-calculator/', '/everyday-life/electricity-cost-calculator/'],
+  related: ['/finance/percent-off-calculator/', '/energy/electricity-cost-calculator/'],
   disclaimer: 'This is an estimate to help you price, not financial or tax advice.',
   published: '2026-10-11',
   updated: '2026-10-11',

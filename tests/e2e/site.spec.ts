@@ -84,6 +84,40 @@ test('fraction: typing updates the answer and shows the working', async ({ page 
   await expect(page.getByText('As a mixed number: 5/3 = 1 2/3.')).toBeVisible();
 });
 
+test('solar: wizard steps, usage tabs and appliance steppers update the live result', async ({ page }) => {
+  await page.goto('/energy/solar-panel-calculator/');
+  await page.locator('[data-hydrated="true"]').first().waitFor();
+  const form = page.locator('form[data-step]');
+  await expect(form).toHaveAttribute('data-step', '1');
+  await page.getByLabel('Where the panels will be').selectOption('pk-lahore');
+  await page.getByRole('button', { name: 'Next: Electricity use' }).click();
+  await expect(form).toHaveAttribute('data-step', '2');
+  await expect(page.locator('.wizard-title')).toBeFocused();
+
+  // Bill tab: Rs 25,000 at the assumed Rs 50 a unit = 500 kWh.
+  await page.getByRole('radio', { name: 'Monthly bill' }).check({ force: true });
+  await page.getByLabel('Your average monthly bill').fill('25000');
+  await expect(page.locator('.result tr', { hasText: 'Your monthly use' })).toContainText('500 kWh');
+
+  // Appliances tab: + adds a 1.5-ton AC (1,200 W × 8 h × 30.42 days = 292 kWh) to the running total.
+  await page.getByRole('radio', { name: 'Pick appliances' }).check({ force: true });
+  const total = page.locator('.group-total');
+  await expect(total).toHaveText('Total: 259 kWh');
+  const before = await page.getByTestId('primary-result').textContent();
+  await page.getByRole('button', { name: 'Increase 1.5-ton inverter AC (average)' }).click();
+  await expect(total).toHaveText('Total: 551 kWh');
+  await expect(page.getByTestId('primary-result')).not.toHaveText(before ?? '');
+  await page.getByRole('button', { name: 'Decrease 1.5-ton inverter AC (average)' }).click();
+  await expect(total).toHaveText('Total: 259 kWh');
+
+  // The step bar jumps straight to the last step; the URL never changes while using the wizard.
+  const url = page.url();
+  await page.getByRole('button', { name: /Savings/ }).first().click();
+  await expect(form).toHaveAttribute('data-step', '4');
+  await expect(page.getByRole('button', { name: 'See your results' })).toBeVisible();
+  expect(page.url()).toBe(url);
+});
+
 test('random number generator: Generate produces numbers in range', async ({ page }) => {
   await page.goto('/statistics/random-number-generator/1-to-16/');
   await page.locator('[data-hydrated="true"]').first().waitFor();

@@ -19,4 +19,5 @@ export const ISLANDS: Readonly<Record<string, ComponentType<IslandProps>>> = {
   'square-footage': dynamic(() => import('./square-footage')),
   gravel: dynamic(() => import('./gravel')),
   'dog-pregnancy': dynamic(() => import('./dog-pregnancy')),
+  'solar-panel': dynamic(() => import('./solar-panel')),
 };

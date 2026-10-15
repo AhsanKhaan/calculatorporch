@@ -1805,10 +1805,10 @@
   }
  },
  {
-  "url": "/everyday-life/electricity-cost-calculator/",
+  "url": "/energy/electricity-cost-calculator/",
   "type": "calculator",
-  "category": "everyday-life",
-  "subcategory": "Home & energy",
+  "category": "energy",
+  "subcategory": "Electricity & bills",
   "name": "Electricity Cost Calculator",
   "primary": "electricity cost calculator",
   "secondary": [
@@ -1834,6 +1834,37 @@
     "keyword-matrix",
     "semrush-bulk",
     "semrush-organic-cn"
+   ]
+  }
+ },
+ {
+  "url": "/energy/solar-panel-calculator/",
+  "type": "calculator",
+  "category": "energy",
+  "subcategory": "Solar",
+  "name": "Solar Panel Calculator",
+  "primary": "solar panel calculator",
+  "secondary": [],
+  "faqCandidates": [],
+  "parent": null,
+  "family": null,
+  "wave": 3,
+  "status": "launch",
+  "adsense": "green",
+  "reason": "owner request 2026-10-16; primary KD 71 exceeds the KD rule",
+  "evidence": {
+   "primaryVolume": 8100,
+   "primaryKd": 71,
+   "primaryCpc": 2.96,
+   "clusterVolume": 8100,
+   "kdRange": [
+    71,
+    71
+   ],
+   "keywords": 1,
+   "sources": [
+    "keyword-matrix",
+    "semrush-bulk"
    ]
   }
  },
@@ -3909,9 +3940,9 @@
   }
  },
  {
-  "url": "/auto/rv-solar-calculator/",
+  "url": "/energy/rv-solar-calculator/",
   "type": "calculator",
-  "category": "auto",
+  "category": "energy",
   "subcategory": null,
   "name": "RV Solar Calculator",
   "primary": "rv solar calculator",
@@ -3939,9 +3970,9 @@
   }
  },
  {
-  "url": "/auto/battery-bank-calculator/",
+  "url": "/energy/battery-bank-calculator/",
   "type": "calculator",
-  "category": "auto",
+  "category": "energy",
   "subcategory": null,
   "name": "Battery Bank Calculator",
   "primary": "battery bank calculator",
@@ -4381,36 +4412,6 @@
    "kdRange": [
     40,
     40
-   ],
-   "keywords": 1,
-   "sources": [
-    "keyword-matrix",
-    "semrush-bulk"
-   ]
-  }
- },
- {
-  "url": "/auto/solar-panel-calculator/",
-  "type": "calculator",
-  "category": "auto",
-  "subcategory": null,
-  "name": "Solar Panel Calculator",
-  "primary": "solar panel calculator",
-  "secondary": [],
-  "faqCandidates": [],
-  "parent": null,
-  "family": null,
-  "wave": 4,
-  "status": "later-kd",
-  "adsense": "green",
-  "evidence": {
-   "primaryVolume": 8100,
-   "primaryKd": 71,
-   "primaryCpc": 2.96,
-   "clusterVolume": 8100,
-   "kdRange": [
-    71,
-    71
    ],
    "keywords": 1,
    "sources": [

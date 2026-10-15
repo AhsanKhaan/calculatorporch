@@ -44,7 +44,7 @@ npm run check:release  # publish gate: fails while any tool has pending verifica
   - FAQ markup, `llms.txt` / `llms-full.txt`, the cannibalization report;
   - 4 programmatic families;
   - the daily-rebuild workflow.
-- **Built: 10 of the 40 wave-1 calculators**, plus all **9 researched programmatic instances**. The 10 calculators:
+- **Built: 10 of the 40 wave-1 calculators**, plus all **9 researched programmatic instances**, plus the **solar panel calculator** (`/energy/solar-panel-calculator/`, added 2026-10-16 on owner request; NASA POWER sun hours for 51 US points and 13 Pakistani cities). The 10 wave-1 calculators:
   - fraction;
   - day counter;
   - random number generator;
